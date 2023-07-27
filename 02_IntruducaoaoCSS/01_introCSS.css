@@ -1,3 +1,8 @@
+body{
+    background-color: #b5cfd5;
+
+}
+
 h1{
     color: red;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,6 +15,7 @@ h2{
     font-size: 45px;
     font-style: italic;
     text-align: right;
+    font-weight: normal;
 }
 h3{
     color: green;
@@ -17,6 +23,7 @@ h3{
     text-transform: capitalize;
     text-align: left;
     text-decoration: underline;
+    background-color: rgb(101, 18, 18);
     
 }
 p{
@@ -28,4 +35,5 @@ p{
 }
 a{
     text-decoration: none;
+    font-variant: normal;
 }
