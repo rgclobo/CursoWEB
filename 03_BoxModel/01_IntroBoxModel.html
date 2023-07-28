@@ -13,7 +13,7 @@
             padding: 0;
         }
         h1{
-            background-color: red;
+            background-color: rgb(0, 106, 255);
             text-align: center;
             padding: 15px 25px;
             margin: 35px
@@ -28,6 +28,31 @@
             background-color: #0c7a9e;
             padding: 0 15px 10px 15px;
         }
+
+        .borda{
+            border-top-style: solid;
+            border-top-width: 15px;
+            border-bottom: 25px solid green;
+            padding: 15px;
+
+        }
+
+        .padding{
+                padding-top: 25px;
+        }
+
+        .margin{
+            margin: 35px;
+
+        }
+
+        .outline{
+            outline: 10px solid black;
+        }
+
+        .borda2 {
+            border: 20px solid orange;
+        }
     </style>
 </head>
 <body>
@@ -35,10 +60,27 @@
 
     <h2>Sub Titulo Box Model</h2>
 
+    <p class="padding"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
+    <p class="margin"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
+
+    <h1 class="borda">Introdução ao Box Model</h1>
+
+    <h2 class="borda pagging margin">Sub Titulo Box Model</h2>
+
     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
-    
+
+<h2 class="outline borda2">Outlinee</h2>
+
+    <p class="outline"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ducimus.</p>
+
+
 </body>
 </html>
