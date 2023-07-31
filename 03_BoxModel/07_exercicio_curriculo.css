@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    background-color: rgb(122, 122, 241);
+    padding: 10px;
+    border-bottom: solid blue 3px;
+}
+
+h2{
+    background-color: #ccc;
+    border-bottom: solid #7a7a7a 3px;
+}
+h4{
+
+}
+
+
+
+.formacao{
+    
+        font-weight: bold;
+
+
+}
