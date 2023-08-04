@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Float e Clear</title>
+    <style>
+        body{
+            /* background-color: #ccc; */
+            margin: 0;
+        }
+        #container{
+            background-color: #ccc;
+            width: 80%;
+            padding: 15px;
+            overflow: auto;
+        }
+
+        #container div{
+            background-color: rgba(255, 0, 0, .3);
+            margin: 10px;
+            width: 20%;
+            height: 50px;
+        }
+
+        #div1{
+            float: left;
+        }
+        #div2{
+            float: left;
+        }
+        #div3{
+            float: left;
+            /* clear: both; */
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="div1">Div 1</div>
+        <div id="div2">Div 2</div>
+        <div id="div3">Div 3</div>
+    </div>
+</body>
+</html>
