@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro FlexBox - Align e Selforder</title>
+
+    <style>
+        .flexbox{
+            height: 250px;
+            border: 3px solid red;
+            display: flex;
+            margin-bottom: 16px;
+
+        }
+        .flexbox div{
+            border: 2px solid orange;
+            width: 50px;
+            margin: 15px;
+        }
+
+        .flex-container1{
+            flex-direction: row;
+            height: 300px;
+
+        }
+
+        .flex-container1 div{
+            background-color: blueviolet;
+            font-size: 36px;
+            color: white;
+
+        }
+
+        .flex-container1 .div2{
+            order: 2;
+            align-self: center;
+        }
+
+        .flex-container1 .div1{
+            order: 1;
+            align-self: flex-end;
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+
+</body>
+</html>
