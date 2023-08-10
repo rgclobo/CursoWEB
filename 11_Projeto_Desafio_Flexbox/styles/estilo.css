@@ -1,0 +1,50 @@
+html,
+body {
+    height: 100%;
+    background-image: url(../imagens/bg-2.jpg);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.top{
+    text-align: center;
+    margin: 80px auto 0;
+    width: 80%;
+    /* margin-bottom: 25px; */
+    
+}
+
+.top h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 46px;
+    text-shadow: 2px 2px 2px black;
+    /* margin-top: 56px; */
+}
+
+.top p{
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    border-bottom: 2px solid white;
+    padding: 16px;
+    display: inline-block;
+    margin: 0 0 10;
+}
+.team{
+display: flex;
+background-color: white;
+margin: 50px;
+width: 650px;
+}
+
+.team div{
+    margin: 8px;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
