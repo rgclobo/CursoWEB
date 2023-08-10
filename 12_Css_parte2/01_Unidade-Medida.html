@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades de Medida</title>
+
+    <style>
+        html{
+            font-size: 62.5%;
+            /* Fixa 62,5% para que 1em seja <=> 10px
+            em resolução de 100% / Tamanho de fonte padrão browser. */
+        }
+
+        h1{
+            /* 3.4em <=> 34px */
+            font-size: 3.4em;
+        }
+
+        b{
+            color: red;
+            font-size: 1em;
+            /* 18px */
+            /* o 'em' herda o tamanho do elemento pai, */
+
+        }
+
+        p {
+        /* font-size: 16px; Vai Fixar o tamanho fonte indepente da config do User. */
+        font-size: 1.6em;
+        /* 1em <=> 16px */
+        }
+
+        strong{
+            /* rem = tamanho relativo a raiz (html)
+            e não em relação ao elemento pai */
+            color: blue;
+            font-size: 1rem;
+            /* 10px */
+        }
+
+        .padding-em{
+            background-color: blueviolet;
+            
+        }
+
+         .padding-em p{
+            /* Como esse é primeiro font-size, ela é a referencia */
+            font-size: 50px;
+
+            margin: 0;
+            /* como em cresce ou diminui proporcional ao primeiro
+            font-size que encontrar */
+            padding: 1em;
+            /* 10px */
+            }
+
+    </style>
+</head>
+<body>
+
+    <h1>Unidades de medidas</h1>
+
+    <p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>. Corporis obcaecati blanditiis adipisci voluptate ipsam eius modi <strong> nisi placeat nihil odio</strong>, asperiores soluta iure veniam est recusandae quo dolore perferendis?</p>
+
+    
+    <div class="padding-em">
+        
+        <p>Padding com em</p>
+    </div>
+</body>
+</html>
