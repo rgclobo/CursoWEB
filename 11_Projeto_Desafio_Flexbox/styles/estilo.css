@@ -1,73 +1,72 @@
 html,
 body {
-    height: 100%;
-    background-image: url(../imagens/bg-2.jpg);
-
+    min-height: 100%;
 }
 
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-
+    background-color: #ccc;
+    background-image: url(../imagens/bg-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 
-.top{
+/* Inicio Header */
+.hero  {
+    padding: 1px;
+}
+
+.hero-content{
+    margin: 100px auto 0;
+    width: 100%;
+    color: white;
     text-align: center;
-    margin: 80px auto 40px;
-    width: 80%;
-    /* margin-bottom: 25px; */
-    
 }
 
-.top h1{
+.hero-content h1{
     text-transform: uppercase;
-    color: white;
-    font-size: 66px;
-    text-shadow: 2px 2px 2px black;
+    font-size: 56px;
+    text-shadow: 2px 2px black;
+    margin-bottom: 0;
 
 }
 
-.top p{
+.hero-content p{
+    background-color: rgba(0, 0, 0, .7);
     font-size: 18px;
-    color: white;
-    background-color: rgba(0, 0, 0, .7);
-    border-bottom: 2px solid white;
-    padding: 26px;
+    padding: 16px;
     display: inline-block;
-    margin: 0 0 10px;
-
-
-}
-.team{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-content: center;
-background-color: white;
-margin: auto;
-margin-bottom: 25px;
-width: 90%;
-max-width: 1100px;
-/* max-height: 400px; */
+    border-bottom: 2px solid;
 }
 
-.team div{
-    margin: 20px 15px 0;
-    margin-bottom: 0;
-    
+.content-section{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 860px;
+    margin: auto;
+    gap: 16px;
+    padding: 16px;
 }
 
-.team img{
-    margin-bottom: 0;
+.card {
+    flex-basis: 250px;
+    /* outline: 2px solid rebeccapurple; */
+    flex-grow: 1;
 }
 
-.team p{
-    
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, .7);
+.card img{
+    width: 100%;
+    display: block;
+}
+
+.card p{
+    background-color: #393535;
     color: white;
-    padding: 10px;
-    margin-top: 0
+    margin: 0;
+    padding: 8px;
+
 
 }
