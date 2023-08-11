@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de Variaveis</title>
+    <style>
+    :root{
+
+    --color: red;
+        
+    }
+
+    html{
+        font-size: 200%;
+    }
+
+    p{
+        color: var(--color);
+    }
+
+    .div1{
+        --color: green;
+    }
+
+    .container{
+        --color: orange;
+
+    }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="div1">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="div2">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</body>
+</html>
