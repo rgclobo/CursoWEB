@@ -18,20 +18,25 @@
 
         b{
             color: red;
-            font-size: 1em;
-            /* 18px */
-            /* o 'em' herda o tamanho do elemento pai, */
+            font-size: .5em; /* 15px */
+            /* A unidade de medida 'em' é sempre relativa ao elemento pai */
 
         }
 
         p {
-        /* font-size: 16px; Vai Fixar o tamanho fonte indepente da config do User. */
-        font-size: 1.6em;
-        /* 1em <=> 16px */
+        /* font-size: 16px; Usar tamanho de fonte em 'px',
+         pode sobescrever as preferencias do usuário .
+         Evitar usar 'px' em tudo, usar em casos isolados,
+         mas em tamanhos 'width, height e fontsize é melhor
+         não usar.'*/
+        
+         /* 1em <=> 16px */
+        font-size: 3em; /* 20px */
+
         }
 
         strong{
-            /* rem = tamanho relativo a raiz (html)
+            /* rem = (root em) tamanho relativo a raiz (html)
             e não em relação ao elemento pai */
             color: blue;
             font-size: 1rem;
