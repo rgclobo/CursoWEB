@@ -60,9 +60,10 @@
             }
 
             .porcentagem{
-                
-                /* height: 500px; */
-                background-color: yellow;
+            
+            width: 60%;
+            height: 500px;
+            background-color: yellow;
             }
 
             .viewport-container{
@@ -70,7 +71,9 @@
                 /* 90% viewport width */
                 width: 90vw;
                 /* 90% viewport height */
-                height: 90vh;
+                /* height: 90vh; */
+                height: auto;
+
 
             }
 
@@ -80,6 +83,25 @@
                 /* Altura em % funciona nesse caso, 
                 pois o elemento pai esta com uma altura defina. */
                 background-color: rgba(0, 0, 255, 0.523);
+            }
+
+            .em{
+                width: 20em;
+                padding: 1em;
+                margin: 1em;
+                background-color: orange;
+                font-size: 1.6em;
+            }
+
+            
+            .ch{
+                /* ch é relativo a largura de '0 (zero)' 
+                em relação ao font-size pré-defiido */
+                width: 20ch;
+                padding: 1em;
+                margin: 1em;
+                background-color: red;
+                font-size: 1.6em;
             }
 
     </style>
@@ -102,7 +124,16 @@
     <div class="porcentagem viewport-container">
 
         <div class="viewport">viewport</div>
-
     </div>
+
+    <div class="em">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi modi tempore dicta, aut molestias sunt! Facilis rem eaque esse? Iure.
+    </div>
+
+    <div class="ch">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, reprehenderit molestias magnam voluptates harum natus quaerat libero architecto facilis porro.
+    </div>
+
+
 </body>
 </html>
