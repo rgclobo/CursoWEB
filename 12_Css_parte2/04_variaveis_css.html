@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Variaveis CSS</title>
+    <style>
+        :root{
+                /* Variaveis */
+            --header-height: 15rem;
+            --main-color: rgba(255, 0, 0, .3);
+        }
+
+        html{
+            font-size: 62,5%;
+        }
+        header{
+            width: 100%;
+            background-color: var(--main-color);
+            height: var(--header-height);
+            font-size: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        main{
+            min-height: calc(100vh - var(--header-height) - 2rem);
+            background-color: #ccc;
+            font-size: 2rem;
+            margin-top: var(--header-height);
+        }
+
+        footer{
+            background-color: blue;
+            height: 10rem;
+            font-size: 2rem;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>Header</header>
+    <main>Main</main>
+    <footer>Footer</footer>
+    
+</body>
+</html>
