@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+
+    <style>
+        div{
+            background-color: orange;
+            width: 200px;
+            height: 150px;
+            margin: 100px;
+
+            /* Efeito de transição de elemento */
+            transition-property: width, height, background-color;
+            /* Escolhe qual propriedade quer animar */
+            transition-duration: .5s, 1s, 2s;
+            /* Tempo de transição */
+            transition-timing-function: cubic-bezier(.52,-0.33,.62,1.52);
+            /* https://cubic-bezier.com/ */
+            transition-delay: .5s;
+            /* Atrasa o Tempo de transição */
+            
+        }
+
+        div:hover{
+            width: 400px;
+            height: 300px;
+            background-color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    
+</body>
+</html>
