@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Font-Face</title>
+
+    <style>
+
+
+        @font-face {
+                font-family: nadia; /* É um apelido para fonte, pode usar o alias que quiser.*/
+                src: 
+                    local("Nadia Serif"), /* Quando usar uma fonte que seja local, usar por local */
+                    local("Nadia-Serif"), /* */
+                    url(fonts/nadia/nadia-serif.ttf) format("truetype"), 
+                    url(fonts/nadia/nadia-serif.woff) format("woff"), 
+                    url(fonts/nadia/nadia-serif.svg) format("svg");
+
+                /* Exemplo de como colocar fontes, pode ser qualquer outra. */
+                /* Pode colocar mais de uma fonte de uma vez também. */
+                /* 
+                Recursos: https://www.fontsquirrel.com/
+                Utilizar para baixar, upar e converter pra ter todos os formatos de fontes necessários.
+                Ajuda: https://css-tricks.com/snippets/css/using-font-face-in-css/
+                */
+            }
+       
+       h1{
+
+            font-family: nadia, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Font-Face</h1>
+</body>
+</html>
