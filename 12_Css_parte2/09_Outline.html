@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Outline</title>
+
+    <style>
+        .div1{
+            width: 200px;
+            height: 100px;
+            background-color: orange;
+
+            border: 4px solid red;
+            /* Border aumenta o tamanho do elemento */
+            box-sizing: border-box;
+
+            margin: 25px auto;
+        }
+
+        .div1:hover{
+            border: 10px solid red;
+            /* Com border no hover ocorre um "pulo" no efeito */
+        }
+
+        .div2{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+
+            outline: 4px solid red;
+            /* outline-offset: -4px; */
+            /* Outline Mantem o tamanho do elemento */
+            box-sizing: border-box;
+
+            margin: 25px auto;
+
+        }
+
+        .div2:hover{
+            outline: 10px solid red;
+            outline-offset: -10px;
+            /* Com outline não altera a posição ou tamanho do elemento */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="div1">Borda com Border</div>
+
+    <div class="div2">Borda com Outline</div>
+
+
+</body>
+</html>
