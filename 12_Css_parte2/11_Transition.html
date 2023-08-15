@@ -6,6 +6,8 @@
 
     <style>
         div{
+            --anima: cubic-bezier(.52,-0.33,.62,1.52);
+            
             background-color: orange;
             width: 200px;
             height: 150px;
@@ -18,8 +20,12 @@
             /* Tempo de transição */
             transition-timing-function: cubic-bezier(.52,-0.33,.62,1.52);
             /* https://cubic-bezier.com/ */
-            transition-delay: .5s;
+            transition-delay: 0s, .5s;
             /* Atrasa o Tempo de transição */
+
+            /* Atalho Transition
+            transition: property(all) duration(0s) function(ease) delay(0s) */
+            transition: width .5s var(--anima), height 1s var(--anima) .3s, background-color .5s var(--anima);
             
         }
 
