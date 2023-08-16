@@ -1,0 +1,81 @@
+:root{
+    --primary-color: #FED001;
+}
+
+html{
+        /* font-size: 62.5%;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400; */
+    font: 400 62.5% 'Inter', sans-serif;
+}
+
+body {
+    
+}
+
+p, a {
+    font-size: 1.6rem;
+}
+
+nav a {
+    /* inherit - faz herdar a propriedade do elemento pai */
+    color: inherit;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+/* Inicio Logo / Menu */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    padding: 2rem 0;
+
+}
+
+.header_nav a {
+    padding: .75em 1.15em;
+    border: solid 1px;
+    text-decoration: none;
+}
+
+.header_nav ul{
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+}
+
+.header_nav a:hover {
+    background-color: black;
+}
+/* Fim Logo / Menu */
+
+
+/* Wrapper Container */
+.wrapperContainer-dark {
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+
+.wrapperContainer-hero {
+
+}
+
+.wrapperContainer-light {
+    background-color: #fafafa;
+}
+
+.wrapperContainer-dark2 {
+    background-color: #003464;
+    color: #fafafa;
+}
+
+.container {
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+/*  */
