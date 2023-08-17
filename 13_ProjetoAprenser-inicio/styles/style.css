@@ -9,16 +9,22 @@ html{
     font: 400 62.5% 'Inter', sans-serif;
 }
 
-body {
-    
-}
-
 p, a {
     font-size: 1.6rem;
 }
 
 h1 {
     font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+
+}
+
+h3 {
+    font-size: 3.2rem;
+
 }
 
 nav a {
@@ -36,6 +42,7 @@ nav a {
     font-size: 1.8rem;
     text-decoration: none;
     padding: 1.6rem 4.6rem;
+    color: inherit;
 }
 
 /* Inicio Logo / Menu */
@@ -65,33 +72,6 @@ nav a {
 }
 /* Fim Logo / Menu */
 
-
-/* Wrapper Container */
-.wrapperContainer-dark {
-    background-color: #2a2a2a;
-    color: #fafafa;
-}
-
-.wrapperContainer-hero {
-    /* background-color: var(--primary-color); */
-    background-image: linear-gradient(transparent, #fefe86);
-
-}
-
-.wrapperContainer-light {
-    background-color: #fafafa;
-}
-
-.wrapperContainer-dark2 {
-    background-color: #003464;
-    color: #fafafa;
-}
-
-.container {
-    max-width: 127.6rem;
-    margin: auto;
-}
-
 /* Inicio Hero Banner */
 
 .heroBanner {
@@ -111,3 +91,95 @@ nav a {
 .header_content a {
     width: 10rem;
 }
+/* Fim Hero Banner */
+
+
+/* Wrapper Container */
+.wrapperContainer {
+    overflow: hidden;
+}
+
+.wrapperContainer-dark {
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+
+.wrapperContainer-hero {
+    /* background-color: var(--primary-color); */
+    background-image: linear-gradient(transparent, #fefe86);
+
+
+}
+
+.wrapperContainer-light {
+    background-color: #fafafa;
+
+}
+
+.wrapperContainer-dark2 {
+    background-color: #003464;
+    color: #fafafa;
+}
+
+.container {
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+.section_title {
+    padding: 7rem 0;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.section_btn {
+    margin: 7rem 0;
+    display: inline-block;
+}
+
+/* Inicio Cursos */
+.cursos {
+    text-align: center;
+
+}
+
+.cursosContainer {
+    display: flex;
+    text-align: left;
+    gap: 1.6rem;
+}
+
+
+.curso_card {
+
+/*  flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; */
+    /* Atalho abaixo para os 3 Valores acima - Resolve para que os cards tenham a mesma largura */
+    flex: 1;
+}
+
+.curso_card img {
+    display: block;
+    width: 100%;
+}
+
+
+.curso_card h3{
+    font-size: 2.4rem;
+
+}
+
+.curso_card p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.cursos_card_content {
+    padding: 1rem 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    border-top: transparent;
+}
+/* Fim Cursos */
