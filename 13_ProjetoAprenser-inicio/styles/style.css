@@ -8,34 +8,26 @@ html{
         font-weight: 400; */
     font: 400 62.5% 'Inter', sans-serif;
 }
-
 p, a {
     font-size: 1.6rem;
 }
-
 h1 {
     font-size: 4.8rem;
 }
-
 h2 {
     font-size: 4rem;
 
 }
-
 h3 {
     font-size: 3.2rem;
-
 }
-
 nav a {
     /* inherit - faz herdar a propriedade do elemento pai */
     color: inherit;
 }
-
 .upper {
     text-transform: uppercase;
 }
-
 .btn {
     background-color: var(--primary-color);
     border-radius: 4px;
@@ -54,19 +46,16 @@ nav a {
     padding: 2rem 0;
 
 }
-
 .header_nav a {
     padding: .75em 1.15em;
     border: solid 1px;
     text-decoration: none;
 }
-
 .header_nav ul{
     display: flex;
     gap: .6rem;
     list-style-type: none;
 }
-
 .header_nav a:hover {
     background-color: black;
 }
@@ -80,14 +69,12 @@ nav a {
     align-items: center;
     gap: 20rem;
 }
-
 .header_content {
     display: flex;
     flex-direction: column;
     gap: 5rem;
 
 }
-
 .header_content a {
     width: 10rem;
 }
@@ -110,29 +97,24 @@ nav a {
 
 
 }
-
 .wrapperContainer-light {
     background-color: #fafafa;
 
 }
-
 .wrapperContainer-dark2 {
     background-color: #003464;
     color: #fafafa;
 }
-
 .container {
     max-width: 127.6rem;
     margin: auto;
 }
-
 .section_title {
     padding: 7rem 0;
     text-align: center;
     margin: 0;
     
 }
-
 .section_btn {
     margin: 7rem 0;
     display: inline-block;
@@ -143,14 +125,11 @@ nav a {
     text-align: center;
 
 }
-
 .cursosContainer {
     display: flex;
     text-align: left;
     gap: 1.6rem;
 }
-
-
 .curso_card {
 
 /*  flex-grow: 1;
@@ -159,23 +138,18 @@ nav a {
     /* Atalho abaixo para os 3 Valores acima - Resolve para que os cards tenham a mesma largura */
     flex: 1;
 }
-
 .curso_card img {
     display: block;
     width: 100%;
 }
-
-
 .curso_card h3{
     font-size: 2.4rem;
 
 }
-
 .curso_card p {
     font-size: 1.8rem;
     line-height: 1.5;
 }
-
 .cursos_card_content {
     padding: 1rem 1.25rem;
     border: 1px solid #ccc;
@@ -183,3 +157,43 @@ nav a {
     border-top: transparent;
 }
 /* Fim Cursos */
+
+/* Inicio Nossa Escola */
+.escola {
+    display: flex;
+    gap: 7rem;
+    padding-top: 6rem;
+}
+
+.escola_title {
+    font-size: 3.2rem;
+    margin-top: 7rem;
+}
+
+.escola p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+/* Fim Nossa Escola */
+
+/* Inicio Contatos */
+.contatos_adress {
+
+    text-align: right;
+    font: 400 1.8rem "Inter", sans-serif;
+    margin: 3rem 0;
+
+}
+/* Fim Contatos */
+
+/* Inicio Footer */
+.footer {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 4.5rem;
+}
+
+.footer a {
+    color: inherit;
+}
+/* Fim Footer */
