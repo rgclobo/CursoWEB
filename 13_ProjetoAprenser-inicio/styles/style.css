@@ -37,6 +37,7 @@ nav a {
     color: inherit;
 }
 
+
 /* Inicio Logo / Menu */
 .header {
     display: flex;
@@ -61,8 +62,16 @@ nav a {
 }
 /* Fim Logo / Menu */
 
-/* Inicio Hero Banner */
 
+/* Inicio Menu Fixo */
+.wrapperContainer-Fixed {
+    /* Faz menu Ficar Fixo quando scrolla */
+    position: sticky;
+    top: 0;
+}
+/* Fim Menu Fixo */
+
+/* Inicio Hero Banner */
 .heroBanner {
     display: flex;
     justify-content: space-between;
@@ -85,7 +94,6 @@ nav a {
 .wrapperContainer {
     overflow: hidden;
 }
-
 .wrapperContainer-dark {
     background-color: #2a2a2a;
     color: #fafafa;
@@ -94,16 +102,16 @@ nav a {
 .wrapperContainer-hero {
     /* background-color: var(--primary-color); */
     background-image: linear-gradient(transparent, #fefe86);
-
-
 }
 .wrapperContainer-light {
     background-color: #fafafa;
-
 }
 .wrapperContainer-dark2 {
     background-color: #003464;
     color: #fafafa;
+}
+.wrapperContainer_padded {
+    padding: 7.3rem;
 }
 .container {
     max-width: 127.6rem;
@@ -113,17 +121,16 @@ nav a {
     padding: 7rem 0;
     text-align: center;
     margin: 0;
-    
 }
 .section_btn {
     margin: 7rem 0;
     display: inline-block;
 }
 
+
 /* Inicio Cursos */
 .cursos {
     text-align: center;
-
 }
 .cursosContainer {
     display: flex;
@@ -131,7 +138,6 @@ nav a {
     gap: 1.6rem;
 }
 .curso_card {
-
 /*  flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0; */
@@ -144,7 +150,6 @@ nav a {
 }
 .curso_card h3{
     font-size: 2.4rem;
-
 }
 .curso_card p {
     font-size: 1.8rem;
@@ -158,23 +163,23 @@ nav a {
 }
 /* Fim Cursos */
 
+
 /* Inicio Nossa Escola */
 .escola {
     display: flex;
     gap: 7rem;
     padding-top: 6rem;
 }
-
 .escola_title {
     font-size: 3.2rem;
     margin-top: 7rem;
 }
-
 .escola p {
     font-size: 1.8rem;
     line-height: 1.5;
 }
 /* Fim Nossa Escola */
+
 
 /* Inicio Contatos */
 .contatos_adress {
@@ -182,9 +187,9 @@ nav a {
     text-align: right;
     font: 400 1.8rem "Inter", sans-serif;
     margin: 3rem 0;
-
 }
 /* Fim Contatos */
+
 
 /* Inicio Footer */
 .footer {
@@ -192,7 +197,6 @@ nav a {
     text-align: center;
     padding: 4.5rem;
 }
-
 .footer a {
     color: inherit;
 }
