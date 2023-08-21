@@ -1,0 +1,16 @@
+
+html {
+    font: 400 62.5% 'Roboto', sans-serif;
+}
+
+.container{
+    width: 124rem;
+    margin: auto;
+}
+
+/*Inicio Topo - Menu */
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
