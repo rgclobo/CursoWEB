@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <form>
+    <form action="#" method="get">
         <fieldset>
             <legend>Introdução</legend>
 
@@ -21,16 +21,37 @@
 
             Possui atividade extra?
             <label>
-                <input type="radio" name="atvExtra">Sim
+                <input type="radio" name="atvExtra" value="s">Sim
             </label>
             
             <label>
-                <input type="radio" name="atvExtra">Não
+                <input type="radio" name="atvExtra" value="n">Não
             </label>
             
-
-            <input type="submit" value="Enviar">
         </fieldset>
+
+
+        <fieldset>
+            <legend>Área de Interesse</legend>
+
+            <label>
+                <input type="checkbox" name="interesse" value="html">HTML 
+            </label>
+            <label>
+                <input type="checkbox" name="interesse" value="css">CSS 
+            </label>
+            <label>
+                <input type="checkbox" name="interesse" value="js">Javascript 
+            </label>
+            <label>
+                <input type="checkbox" name="interesse" value="python">Python 
+            </label>
+            <label>
+                <input type="checkbox" name="interesse" value="java">Java 
+            </label>
+        </fieldset>
+        <br><br><br>
+        <input type="submit" value="Enviar">
     </form>
     
 </body>
