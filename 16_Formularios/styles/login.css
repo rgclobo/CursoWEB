@@ -54,3 +54,14 @@ legend{
     margin-bottom: .5em;
 }
 
+.btn{
+    width: fit-content;
+    margin-left: auto;
+    background-color: #95A5A6;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #bbb;
+}
+
