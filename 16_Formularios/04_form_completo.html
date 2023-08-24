@@ -95,10 +95,66 @@
                     <option value="PHP"></option>
             </datalist>
         </label>
+        </fieldset>
 
+        <fieldset>
+            <legend>Digite sua mensagem</legend>
+            <!-- a tag 'textarea' serve para abrir uma opção para o usuário escrever um texto -->
+            <!-- o atributo 'maxlength' delimita o n. de caracteres maximo -->
+            <!-- o atributo em style 'resize: none', bloqueia que o user mude o tamanho da caixa de texto -->
+            <textarea name="" id="" cols="30" rows="10" maxlength="50" style="resize: none;"></textarea>
+            <br><br>
+
+            <!-- o atributo 'readonly' bloqueia que o user apague ou escreva na caixa de texto -->
+            <!-- o atributo 'disable' desabilita a caixa de texto, mostra o box em formato desabilitado -->
+            <textarea cols="50" rows="8" readonly disabled>Contrato de Utilização:
+    1.1 - Regra 1
+
+    2.2 - Regra 2
+            </textarea>
+            <label>
+                <!-- Opção de caixa de aceito -->
+            <input type="checkbox"> Li e aceito o contrato</label>
+            <br><br>
+            <!-- Opçao para enviar arquivo -->
+            <!-- colocar  enctype="multipart/form-data" no form -->
+            <input type="file">
         </fieldset>
         <br><br><br>
+
+        <!-- Botões -->
         <input type="submit" value="Enviar">
+        <input type="button" value="button">
+        <!-- Para que o button funcione de acordo com o que deseja, é necessário colocar a o 'type'
+        e selecionar qual atributo deseja, também é possivel controlar o conteudo de dentro da tag
+        abre mais opções que a tag 'input'-->
+        <!-- Padrão tag button é submit -->
+        <button type="submit">Enviar com button</button>
+        <button><em>Botão</em></button>
+        <br><br><br>
+
+            <fieldset>
+                Search:
+                <input type="search">
+
+                <br><br>
+
+                Range:
+                <input type="range"
+                        value="0"
+                        min="0"
+                        max="10"
+                        step=".5">
+
+                <br><br>
+                <input type="time">
+
+                <br><br>
+                <input type="color">
+
+            </fieldset>
+
+
     </form>
     
 </body>
