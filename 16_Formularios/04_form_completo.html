@@ -49,6 +49,53 @@
             <label>
                 <input type="checkbox" name="interesse" value="java">Java 
             </label>
+            <br><br>
+            <label>Selecione uma linguagem
+                <br>
+            <select name="linguagem" required>
+                <option value="">Selecione:</option>
+                <optgroup label="frontend">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">Javascript</option>
+                </optgroup>
+
+                <optgroup label="backend">
+                    <option value="java">Java</option>
+                    <option value="python">HTML</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+            <label>Selecione uma linguagem
+                <br>
+                <!-- Com o atributo 'multiple' pode se selecionar mais de uma opção, usar o 
+                atributo 'size' para abrir a caixa de rolagem com o n. de opções disponiveis. -->
+            <select name="linguagem" required multiple>
+                <option value="">Selecione:</option>
+                <optgroup label="frontend">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">Javascript</option>
+                </optgroup>
+
+                <optgroup label="backend">
+                    <option value="java">Java</option>
+                    <option value="python">HTML</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <input type="text" list="linguagemList">
+            <datalist id="linguagemList">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="Javascript"></option>
+                    <option value="Java"></option>
+                    <option value="Python"></option>
+                    <option value="PHP"></option>
+            </datalist>
+        </label>
+
         </fieldset>
         <br><br><br>
         <input type="submit" value="Enviar">
