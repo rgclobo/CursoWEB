@@ -3,14 +3,21 @@
     --top_color_logo: white;
     --top_color_menu: #425564;
     --color_text: #555;
+    --font_roboto: 'Roboto', sans-serif;
+    --font_viaola: 'Viaoda Libre', cursive, sans-serif;
 }
 
 html {
-    font: 400 62.5% 'Roboto', sans-serif;
+    font: 400 62.5% var(--font_viaola);
+}
+
+body{
+    background-color: #555;
 }
 /* Start Containers */
 .container{
-    width: 124rem;
+    max-width: 124rem;
+    min-width: 100rem;
     margin: auto;
 }
 .top_container {
@@ -18,7 +25,9 @@ html {
     background-color: #162028;
 }
 .mid_container{
-    border: 1px solid orange;
+    background-color: white;
+    margin-top: 0;
+    padding: 0;
     
 
 }
@@ -32,8 +41,9 @@ html {
 }
 .header_top p {
     color: var(--top_color_logo);
-    margin-left: 12rem;
-    font-size: 2rem;
+    font-size: 3.5rem;
+    padding: .8rem;
+    margin: 0 0 0 18rem;
 }
 .header_nav {
     display: flex;
@@ -57,6 +67,7 @@ html {
 /* Start Hero Banner */
 .hero_banner img{
     width: 124rem;
+    margin: 0;
     /* height: 48.8rem; */
     background-position: center;
 }
@@ -64,13 +75,17 @@ html {
 
 /* Start Mid Content */
 .mid_content{
+    max-width: 82rem;
     margin-top: 10rem;
+    margin: auto;
     text-align: center;
     color: var(--color_text);
 }
 
 .mid_content_text{
+    margin: auto;
     margin-bottom: 6rem;
+    text-align: center;
 }
 .mid_content_text h1{
     font-size: 3rem;
@@ -78,27 +93,28 @@ html {
  }
 
  .mid_content_text p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: center;
     line-height: 2;
+    letter-spacing: .3px;
 
  }
 .mid_content_models{
-    border: 1px solid red;
-    width: 100rem;
-    margin: auto;
+    /* width: 100rem; */
+    /* margin: auto; */
     /* display: flex;
     justify-content: space-between; */
 }
 .list_models{
-    border: 1px solid green;
     display: flex;
-    /* gap: 5rem; */
-    justify-content: space-between;
+    gap: 3rem;
+    justify-content:center;
     align-items: center;
+    padding: 0;
 }
 
 .list_models_content{
+    font-family: var(--font_roboto);
     list-style-type: none;
 }
 
