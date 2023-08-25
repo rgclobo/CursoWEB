@@ -34,6 +34,7 @@ textarea{
     box-sizing: border-box;
 }
 
+
 input,
 textarea{
     background-color: rgba(0, 0, 0, .3);
@@ -42,7 +43,39 @@ textarea{
     padding: .75em;
     margin: .5em 0 2.5em;
     color: white;
+    outline: 0;
 }
+
+/* input:valid,
+textarea:valid{
+background-color: green;
+} */
+
+/* input:invalid,
+textarea:invalid{
+    background-color: red;
+} */
+
+/* É possivel trabalhar com mais de uma pseudoclasse ao mesmo tempo */
+input:invalid:focus,
+textarea:invalid:focus{
+    /* background-color: red; */
+    border-bottom: 2px solid #ff000d;
+}
+
+input:valid:focus,
+textarea:valid:focus{
+    border-bottom: 2px solid #0ec72a;
+
+}
+
+input:focus,
+textarea:focus{
+    background-color: #2a2727;
+    border-bottom: #8e999a;
+    /* color: black; */
+}
+
 
 legend{
     padding: .5em;
