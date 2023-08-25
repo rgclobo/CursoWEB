@@ -1,0 +1,56 @@
+:root{
+    --colors: #3a68b7;
+    --fonts: 'Roboto', sans-serif;
+}
+
+html{
+    background-color: var(--colors);
+    font-family: var(--fonts);
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+.form{
+    border-left: 1rem solid rgba(0, 0, 0, .5);
+    background-color: white;
+    width: 90%;
+    min-width: 45rem;
+    max-width: 64rem;
+    padding: 1.5rem;
+    
+    
+}
+
+.form fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    /* background-color: white; */
+    gap: 1rem;
+}
+
+.form legend{
+    font-size: 1.8rem;
+}
+
+label,
+input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
