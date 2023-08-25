@@ -1,16 +1,115 @@
+:root {
+    /* Variaveis */
+    --top_color_logo: white;
+    --top_color_menu: #425564;
+    --color_text: #555;
+}
 
 html {
     font: 400 62.5% 'Roboto', sans-serif;
 }
-
+/* Start Containers */
 .container{
     width: 124rem;
     margin: auto;
 }
+.top_container {
+    /* border: 1px solid red; */
+    background-color: #162028;
+}
+.mid_container{
+    border: 1px solid orange;
+    
 
-/*Inicio Topo - Menu */
+}
+/* End Containers */
+
+/* Start Top - Menu */
 .header_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.header_top p {
+    color: var(--top_color_logo);
+    margin-left: 12rem;
+    font-size: 2rem;
+}
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.header_nav li{
+    list-style-type: none;
+    margin-right: 6.0rem;
+}
+
+.header_nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: var(--top_color_menu);
+    letter-spacing: 3px;
+}
+/* End Top - Menu */
+
+/* Start Hero Banner */
+.hero_banner img{
+    width: 124rem;
+    /* height: 48.8rem; */
+    background-position: center;
+}
+/* End Hero Banner */
+
+/* Start Mid Content */
+.mid_content{
+    margin-top: 10rem;
+    text-align: center;
+    color: var(--color_text);
+}
+
+.mid_content_text{
+    margin-bottom: 6rem;
+}
+.mid_content_text h1{
+    font-size: 3rem;
+    color: rgb(30, 28, 28);
+ }
+
+ .mid_content_text p{
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2;
+
+ }
+.mid_content_models{
+    border: 1px solid red;
+    width: 100rem;
+    margin: auto;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.list_models{
+    border: 1px solid green;
+    display: flex;
+    /* gap: 5rem; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list_models_content{
+    list-style-type: none;
+}
+
+.list_models_text{
+    font-size: 1.4rem;
+}
+
+.models_title{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+/* End Mid Content */
+
