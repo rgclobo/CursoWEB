@@ -9,27 +9,27 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <form class="form" action="">
-        <fieldset class="">
-            <legend>Login</legend>
-            <label for="user">Usuário</label>
-            <input type="text" 
+    <form class="form" action="" autocomplete="off">
+        <fieldset class="form__fieldset">
+            <legend class="form__title">Login</legend>
+            <label for="user" class="form__label">Usuário</label>
+            <input class="form__input" type="text" 
                     name="user"
                     id="user"
                     required
                     placeholder="Digite seu usuário">
 
-            <label for="password">Senha</label>
-            <input type="password"
+            <label for="password" class="form__label">Senha</label>
+            <input class="form__input" type="password"
                     name="password"
                     id="password"
                     required
                     placeholder="Digite sua senha">
 
         <div class="button-form">
-            <button type="submit">Login</button>
-            <a href="cadastro.html">Cadastre-se</a>
-            <a href="#">Esqueci minha senha</a>
+            <button type="submit" class="btn btn_primary" >Login</button>
+            <a href="cadastro.html" class="btn btn_secondary" >Cadastre-se</a>
+            <a href="#" class="form__action__aside" >Esqueci minha senha</a>
         </div>
         </fieldset>
     </form>
