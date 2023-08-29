@@ -1,0 +1,61 @@
+html{
+    font-size: 20px;
+}
+
+/* Vai selecionar o primeiro paragrafo da div */
+div :first-child{
+    color: red;
+}
+
+/* Vai selecionar o primeiro filho de uma tag p */
+p:first-child{
+    color: green;
+}
+
+/* Vai selecionar o ultimo filho da tag p */
+p:last-child{
+    color: brown;
+
+}
+
+/* Seleciona o enézimo filho, dentro do parenteses coloca o n.
+do filho que quer selecionar, começa com 1 */
+p:nth-child(3){
+    background-color: blue;
+}
+
+/* Seleciona sempre o primeiro filho da tag selecionada,
+no caso aqui, vai ser o primeiro filho da tag p,
+independente de haver outros elementos, vai selecionar a
+primeira tag p que vai encontrar */
+p:first-of-type{
+    background-color: purple;
+}
+
+/* Assim como a first-of-type, a last vai selecionar o ultimo
+filho da tag, no caso aqui o ultimo filho da tag p */
+p:last-of-type{
+    background-color: red;
+}
+
+
+/* Vai selecionar o enézimo filho do elemento, tendo que
+informar qual é a posição do elemento, no caso aqui
+vai selecionar a segunda tag p que encontrar */
+p:nth-of-type(2){
+    text-decoration: underline;
+}
+
+
+/* Vai selecionar os elementos por par ou impar,
+usando even(par) ou odd(ímpar} */
+li:nth-child(even){
+    background-color: gray;
+}
+/* Pode se usar também por formular matemática,
+usando o número seguido da letra 'n', que vai fazer a mesma função */
+li:nth-child(3n){
+    background-color: bisque;
+}
+
+
