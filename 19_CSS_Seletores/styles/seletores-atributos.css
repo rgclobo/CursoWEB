@@ -1,0 +1,23 @@
+/* O Simbolo '[]' seleciona o atributo que vai ser editado,
+no caso todos que tem o href="#" */
+/* Com condição de não ser o link-ok */
+a[href="#"]:not(.link-ok){
+    color: red;
+    opacity: .2;
+}
+
+/* O simbolo '^' simboloza Todos que começam com o desejado
+no caso aqui, todos que começam com http */
+a[href^="http"]{
+    color: green;
+}
+
+/* o simbolo '$' simboliza todos que terminam com o desejado
+no caso aqui '.pdf' */
+a[href$=".pdf"]{
+    color: blueviolet;
+}
+
+a[target="_blank"]{
+    text-decoration: none;
+}
