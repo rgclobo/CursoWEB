@@ -1,0 +1,38 @@
+html{
+    font-size: 20px;
+}
+
+article{
+    outline: 3px solid green;
+}
+
+/* Espaço representa decendencia */
+article a{
+    color: red;
+}
+
+/* Sinal '>' representa filho direto da tag anterior */
+article a > b{
+    color: green;
+}
+
+/* Sinal '+' representa próximo irmão da tag - 
+A Tag que vem imediatamente após da anterior */
+h3 + p{
+    background-color: yellow;
+
+}
+
+/* Sinal '~' representa próximos irmãos */
+h3 ~ p{
+    border: 3px dashed orange;
+}
+
+.destaque{
+    padding-left: 2rem;
+}
+
+/* Negação da condição - Todos que não tem a classe destaque  */
+article p:not(.destaque){
+    background-color: #aeadad;
+}
