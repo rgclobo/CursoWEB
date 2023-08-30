@@ -49,13 +49,25 @@ p:nth-of-type(2){
 
 /* Vai selecionar os elementos por par ou impar,
 usando even(par) ou odd(ímpar} */
-li:nth-child(even){
+ul[impar-par] li:nth-child(even){
     background-color: gray;
 }
-/* Pode se usar também por formular matemática,
-usando o número seguido da letra 'n', que vai fazer a mesma função */
-li:nth-child(3n){
+
+ul[impar-par] li:nth-child(odd){
     background-color: bisque;
+}
+
+/* Pode se usar também por formular matemática,
+usando o número seguido da letra 'n',*/
+ul[child-n] li:nth-child(3n - 2){
+    background-color: red;
+}
+
+
+/* XN expression + not */
+
+ul[child-n] li:not(:nth-child(3n - 2)){
+    background-color: green;
 }
 
 
