@@ -1,10 +1,15 @@
-a[target]::after{
-    content: url(../images/newWindow-icon.png);
-    padding-left: 3px;
+a{
+    display: inline-block;
+    margin-bottom: 1em;
 }
-a:not([target])::before{
+
+a[target="_blank"]::after{
+    content: url(../images/newWindow-icon.png);
+    padding-left: .5em;
+}
+a[href$=".pdf"]::before{
     content: url(../images/pdf-icon.gif);
-    padding-right: 3px;
+    padding-right: .5em;
 }
 
 
@@ -20,6 +25,6 @@ input[id="chk2"]:disabled + label{
     color: blue;
 }
 
-ol ul li:nth-of-type(3){
+li li:nth-of-type(3){
     background-color: purple;
 }
