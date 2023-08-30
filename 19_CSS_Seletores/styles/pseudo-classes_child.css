@@ -58,7 +58,8 @@ ul[impar-par] li:nth-child(odd){
 }
 
 /* Pode se usar também por formular matemática,
-usando o número seguido da letra 'n',*/
+usando o número seguido da letra 'n',
+xN expression*/
 ul[child-n] li:nth-child(3n - 2){
     background-color: red;
 }
@@ -69,5 +70,7 @@ ul[child-n] li:nth-child(3n - 2){
 ul[child-n] li:not(:nth-child(3n - 2)){
     background-color: green;
 }
+
+
 
 
