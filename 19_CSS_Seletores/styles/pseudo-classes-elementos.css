@@ -62,3 +62,17 @@ input[type="text"]:placeholder-shown{
     background-color: wheat;
 }
 
+/* Vai formatar o apenas o elemento que é filho único!*/
+p:only-child{
+    background-color: orange;
+}
+
+/* Vai formatar o elemento que no caso é editavel  */
+p:read-write{
+    border-bottom: 2px solid red;
+}
+
+/* Div com target */
+div:target{
+    border: 4px dashed red;
+}
