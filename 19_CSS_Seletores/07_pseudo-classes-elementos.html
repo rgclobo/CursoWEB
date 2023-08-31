@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-Classes e Psudo-Elementos</title>
+    <link rel="stylesheet" href="styles/pseudo-classes-elementos.css">
+</head>
+<body>
+    <button>Vai</button><br>
+    <button disabled>Vai Disable</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, magni.</p>
+    <!-- Se houver espaço dentro de um elemento, a pseudo-classe
+    'empty' não vai funcionar, pois com espaço, não é VAZIO! -->
+    <p> </p>
+    <p></p>
+
+    <ul>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+    </ul>
+    <!-- 'tabindex="0"' segue a ordem natural dos elementos  -->
+    <!-- tabindex="1" Coloca o elemento como primeiro na tabulação -->
+    <p tabindex="2">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="1">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+
+    <form action="#">
+        <input type="text" value="valor inicial"><br><br>
+        <input type="text" value="valor" disabled><br><br>
+        <input type="text" value="valor" readonly><br><br>
+        <input type="text" placeholder="placeholder"><br><br>
+    </form>
+</body>
+</html>

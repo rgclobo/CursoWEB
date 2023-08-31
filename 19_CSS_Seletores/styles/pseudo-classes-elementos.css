@@ -1,0 +1,64 @@
+button{
+    background-color: #6b6b6b;
+    color: white;
+    border: none;
+    padding: 1em;
+    margin-bottom: .5em;
+}
+
+button:disabled{
+    opacity: .5;
+}
+
+/* Se conter espaço, não é VAZIO! */
+p:empty:before {
+    content: "Paragrafo vazio?";
+}
+
+a:focus{
+    background-color: yellow;
+}
+
+a:hover{
+    background-color: red;
+}
+
+/* Pode se usar as duas psedo-classes juntas
+exemplo abaixo */
+a:hover,
+a:focus{
+    background-color: green;
+}
+
+/* a pseudo-classe 'read-write' vai formatar aqueles elementos que apenas podem ser editados e lidos */
+input[type="text"]:read-write{
+    background-color: #999;
+    border: none;
+    padding: .5em;
+}
+
+/* a pseudo-classe 'read-only' Vai formatar apenas o elemento que tem apenas leitura */
+input[type="text"]:read-only{
+    background-color: yellow;
+}
+
+/* 'disable': Vai formatar apenas os elementos com a pseudo-classe 'disable' */
+input[type="text"]:disabled{
+    background-color: orange;
+}
+
+/* Quando uma pseudo-classe sob-escrever a outra, é possivel
+usar a pseud-classe ':not'.
+input[type="text"]:read-only:not(:disabled){
+    background-color: yellow;
+} */
+
+input[type="text"]::placeholder {
+    color: white;
+}
+
+/*A pseudo-classe 'placeholder-show' vai formatar Quando o 'placeholder' estiver sendo exibido, vai formatar o elemento */
+input[type="text"]:placeholder-shown{
+    background-color: wheat;
+}
+
