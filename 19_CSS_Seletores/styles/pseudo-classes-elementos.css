@@ -76,3 +76,31 @@ p:read-write{
 div:target{
     border: 4px dashed red;
 }
+
+/* Abaixo aqui Pseudo Elementos! */
+/* Vai formatar a primeira letra de um elemento */
+.pseudoelemento p::first-letter{
+    font-size: 4em;
+    color: red;
+}
+
+/* a pseudoelemento '::first-line' vai formatar a primeira linha do elemento */
+.pseudoelemento p::first-line{
+    color: blue;
+}
+
+/*a pseudo-elemento '::selection' Vai mudar a cor da seleção que o usuário fará */
+::selection{
+    background-color: orange;
+}
+
+/* Elemento 'a' que está contido em 'p' */
+.pseudoelemento p a{
+    color: red;
+    background-color: yellow;
+}
+
+/* a pseudoelemento 'has' vai editar o Elemento 'p' que contem 'a' */
+.pseudoelemento p:has(a){
+    background-color: green;
+}
