@@ -1,0 +1,36 @@
+body{
+    margin-bottom: 100vh;
+}
+
+div{
+    outline: 1px solid #888;
+    width: 200px;
+    margin: .5em auto;
+}
+p{
+    width: 50%;
+
+}
+.destaque{
+    background-color: yellow;
+}
+
+/*A propriedade 'transform: translate' - Movimenta o elemento nos eixos x e y, 
+pode se usar valores positivos e negativos*/
+/* *** Existe diferença em usar com porcentagem
+pois é relativo ao próprio elemento*/
+.div1 .destaque{
+    /* transform: translateX(); */
+    /* transform: translateY(); */
+    /* Abaixo usando x e y na mesma linha */
+    transform: translate(50px, -50px);
+}
+
+/* Tem o mesmo efeito da 'transform: translate' */
+/* *** Existe diferença em usar com porcentagem,
+pois é relativo ao elemento pai */
+.div2 .destaque{
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
