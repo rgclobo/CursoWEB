@@ -28,7 +28,10 @@ body{
     background-color: white;
     margin-top: 0;
     padding: 0;
-    
+    padding-bottom: 5rem;
+}
+
+.end_container{
 
 }
 /* End Containers */
@@ -67,9 +70,9 @@ body{
 /* Start Hero Banner */
 .hero_banner img{
     width: 124rem;
-    margin: 0;
-    /* height: 48.8rem; */
+    margin: auto;
     background-position: center;
+    display: block;
 }
 /* End Hero Banner */
 
@@ -81,30 +84,21 @@ body{
     text-align: center;
     color: var(--color_text);
 }
-
 .mid_content_text{
-    margin: auto;
+    display: inline-block;
+    margin-top: 6rem;
     margin-bottom: 6rem;
-    text-align: center;
 }
 .mid_content_text h1{
     font-size: 3rem;
     color: rgb(30, 28, 28);
  }
-
  .mid_content_text p{
     font-size: 1.8rem;
     text-align: center;
     line-height: 2;
     letter-spacing: .3px;
-
  }
-.mid_content_models{
-    /* width: 100rem; */
-    /* margin: auto; */
-    /* display: flex;
-    justify-content: space-between; */
-}
 .list_models{
     display: flex;
     gap: 3rem;
@@ -112,16 +106,13 @@ body{
     align-items: center;
     padding: 0;
 }
-
 .list_models_content{
     font-family: var(--font_roboto);
     list-style-type: none;
 }
-
 .list_models_text{
     font-size: 1.4rem;
 }
-
 .models_title{
     text-transform: uppercase;
     font-weight: 600;
@@ -129,3 +120,22 @@ body{
 }
 /* End Mid Content */
 
+/* Start End_Content*/
+.end_content{
+    background-image: url(../imagens/bg_detalhe.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+}
+
+.end_content__text{
+    padding-top: 5rem;
+    color: white;
+}
+
+.end_content__text h2{
+    font-size: 5rem;
+}
+
+
+/* End End_content */
