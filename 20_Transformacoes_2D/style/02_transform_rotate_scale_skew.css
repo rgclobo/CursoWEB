@@ -1,0 +1,60 @@
+body{
+    margin-bottom: 100vh;
+}
+
+div{
+    outline: 1px solid #888;
+    width: 200px;
+    margin: .5em auto;
+}
+p{
+    width: 50%;
+
+}
+.destaque{
+    background-color: yellow;
+}
+
+/*A propriedade 'transform: translate' - Movimenta o elemento nos eixos x e y, 
+pode se usar valores positivos e negativos*/
+/* *** Existe diferença em usar com porcentagem
+pois é relativo ao próprio elemento*/
+.div1 .destaque{
+    /* transform: translateX(); */
+    /* transform: translateY(); */
+    /* Abaixo usando x e y na mesma linha */
+    transform: translate(50px, -50px);
+}
+
+/* Tem o mesmo efeito da 'transform: translate' */
+/* *** Existe diferença em usar com porcentagem,
+pois é relativo ao elemento pai */
+.div2 .destaque{
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+
+.div3 .destaque{
+    /* Faz a rotação do elemento, usa os valores em graus  */
+    transform: rotate(30deg);
+}
+
+.div4 .destaque{
+    /* Vai mexer na escala de tamanho do elemento,
+    pode se usar no eixo x e y e também funciona em '%' */
+    /* transform: scaleX(); */
+    /* transform: scaleY(); */
+    /* Pode usar em um só comando, colocando primeiro em x e após em y
+    como abaixo */
+    transform: scale(.5, 2);
+}
+
+.div5 .destaque{
+    /* Vai distorcer o elemento nos eixos x e y, colocando o valor em graus */
+    /* transform: skewX(); */
+    /* transform: skewY(); */
+    /* Pode usar os dois no mesmo comando, primeiro em x e depois em y
+    como abaixo */
+    transform: skew(45deg, 20deg);
+}
