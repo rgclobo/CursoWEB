@@ -35,7 +35,7 @@
 
 /* Segundo Checkbox */
 .lbl2 input[type=checkbox]{
-    display: none;
+    /* display: none; */
 }
 
 .lbl2 span {
@@ -64,4 +64,19 @@
     transform: rotate(45deg);
     border-left-color: transparent;
     border-top-color: transparent;
+}
+
+.lbl2 input[type="checkbox"]{
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    outline: none;
+}
+.lbl2 input[type="checkbox"]:focus+span{
+    outline: 2px solid black;
+    outline-offset: -2px;
+    box-sizing: border-box;
 }
