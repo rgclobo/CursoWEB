@@ -1,0 +1,33 @@
+body{
+    margin-bottom: 100vh;
+}
+
+div{
+    outline: 1px solid #888;
+    width: 300px;
+    margin: .5em auto;
+}
+p{
+    /* width: 50%; */
+
+}
+.destaque{
+    background-color: yellow;
+}
+
+/* A ordem entre as propriedas de transform,
+tem interferncia no resultado */
+
+.div6 .destaque{
+    transform: translate(0px) rotate(30deg);
+    /* transform-origin - vai definir a partir de qual lado
+    vai começar a fazer o transform */
+    /* Pode se usar valores numéricos ou em % 
+    onde '0' é igual ao inicio do bloco*/
+    transform-origin: left bottom;
+}
+
+.div7 .destaque{
+    transform: rotate(45deg) translate(100px);
+    transform-origin: 15px 25px ;
+}
