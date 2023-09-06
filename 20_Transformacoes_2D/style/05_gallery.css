@@ -47,14 +47,22 @@ h1{
 }
 
 .image{
-    border: 2px solid green;
     flex-basis: 250px;
+    overflow: hidden;
+
 
 }
 
+.image img:hover{
+    transform: scale(1.25);
+}
+
 .card{
-    display: block;
+    /* display: block; */
     width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.2s;
 
 
 }
@@ -73,8 +81,15 @@ a{
     color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transform: translateY(0);
+    transition: 0.2s;
 }
 
-.desc__image:hover{
-    
+/* .desc__image:hover{
+    transform: translateY(-3.2rem);
+} */
+
+
+.image:has(img:hover) .desc__image{
+    transform: translateY(-3.2rem);
 }
