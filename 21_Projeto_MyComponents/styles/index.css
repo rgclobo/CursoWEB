@@ -1,0 +1,38 @@
+:root{
+    --primary-color: #ff7833;
+    --secondary-color: #31333b;
+    --default-color: #e7e7e7;
+    --bg-color: #444856;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    color: var(--default-color);
+    background-color: #ccc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.main_header{
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 26rem; */
+    flex: 0 0 26rem;
+    background-color: var(--secondary-color);
+}
+
+.main{
+    background-color: var(--bg-color);
+    /* flex-grow: 1;
+    flex-shrink: 0; */
+    flex: 1 0;
+}
+
+a{
+    color: inherit;
+}
