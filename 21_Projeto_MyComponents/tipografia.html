@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>My Components - Tipografia</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/tipografia.css">
+</head>
+
+<body>
+    <header class="main_header">
+        <nav class="main_nav">
+            <a href="#">
+                <img src="imagens/perfil.png" alt="João da Silva Sauro" class="perfil_img">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>My Components</h1>
+      
+        <article class="hightlight">
+            <h2>Tipografia</h2>
+            <p>A Tipografia transmite nossas definições de tamanhos e espaçamento e deve ser utilizada respeitando a hierarquia dos elementos na interface</p>
+        </article>
+
+        <section>
+            <h3>Elementos</h3>
+
+            <article>
+                <h4>Textos</h4>
+                <p>Esse texto esta escrito em <b>negrito</b> e esse texto é um <strong>texto forte</strong>.</p>
+                <p>Esse texto está em <i>itálico</i> e este está <em>com ênfase</em>.</p>
+                <p>Isto é um texto <u class="underline">sublinhado</u> e isso é um <a href="#">link</a>.</p>
+                <p>** Não utilizar a tag &lt;u&gt;Sublinhado&lt;/u&gt; , para fazer sublinhado, pois esse não é o sentido semântico dela. Para usar <strong>sublinhado</strong> em caso visuais, o correto é fazer o estilo no <strong>CSS</strong>. **</p>
+                <p>Pode se usar a TAG &lt;u&gt;Sublinhado&lt;/u&gt; para o seu uso correto, por exemplo, mostrando um palavra com a escrita <span class="wrongword">erada</span>. Crie uma &lt;span&gt;Span&lt;/span&gt;, com uma classe, e mude o seu estilo no <strong>CSS</strong>. </p>
+            </article>
+
+            <article>
+                <h4>Sobreescrito e subscrito</h4>
+                <p>Para escrever texto em <strong>Sobreescrito e subscrito</strong>, utilize as tags &lt;sup&gt;&lt;/sup&gt; e &lt;sub&gt;&lt;/sub&gt;.</p>
+                <p>3<sup>2</sup> é igual à 9</p>
+                <p>A fórmula da água é H<sub>2</sub>O</p>
+            </article>
+
+            <article>
+                <h4>Abreviações com &lt;abbr&gt;ABrevia&ccedil;&otilde;es&lt;/abbr&gt;</h4>
+                <p>Abreviações simples</p>
+                <p>Para criar páginas na web precisamos aprender sobre
+                    <abbr title="HiperText Markup Language">HTML</abbr>.
+                </p>
+
+                <h4>Abreviações com &lt;abbr&gt;ABrevia&ccedil;&otilde;es&lt;/abbr&gt; e &lt;dfn&gt;Defini&ccedil;&atilde;o&lt;/dfn&gt;</h4>
+                <p>Abreviações com Definições é muito pouco usado!</p>
+                <p>Serve para um sistema parecido com Wikipedia, dicionário e etc.</p>
+                
+                <p>
+                    Para criar páginas na web precisamos aprender sobre 
+                    <a href="#html-dfn"><abbr title="HiperText Markup Language">HTML</abbr></a>.
+                </p>
+                <p>O <dfn id="html-dfn">
+                        <abbr title="HiperText Markup Language">HTML</abbr>
+                    </dfn> 
+                    é a principal linguagem da web onde podemos incluir nosso conteúdo de forma semântica
+                </p>
+            </article>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

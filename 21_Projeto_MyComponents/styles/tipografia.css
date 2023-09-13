@@ -1,0 +1,9 @@
+/* Maneira de se usar sublinhado na TAG 'u' */
+
+.underline {
+    text-decoration: red wavy underline;
+}
+
+.wrongword{
+    text-decoration: red wavy underline;
+}
