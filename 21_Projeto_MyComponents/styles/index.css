@@ -41,6 +41,10 @@ article{
     padding: 1em 0;
 }
 
+section{
+    margin-bottom: 3rem;
+}
+
 .main, .main_header{
     font-size: 1.6rem;
 }

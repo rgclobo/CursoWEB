@@ -1,10 +1,3 @@
-:root{
-    --primary-color: #ff7833;
-    --secondary-color: #31333b;
-    --default-color: #e7e7e7;
-    --secondary-color-light: #444856;
-}
-
 .card{
     max-width: 740px;
     background-color: var(--secondary-color);
@@ -24,4 +17,14 @@
 
 .card_title{
     font-size: 1.75em;
+}
+
+.row{
+    display: flex;
+    gap: 1.2em;
+    padding: 1.5rem 0;
+}
+
+.card img{
+    max-width: 100%;
 }
