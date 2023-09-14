@@ -36,8 +36,9 @@ h2{
 }
 
 article{
-    padding-top: 1px;
-    padding-bottom: 1px;
+    /* padding-top: 1em;
+    padding-bottom: 1em; */
+    padding: 1em 0;
 }
 
 .main, .main_header{
@@ -90,7 +91,9 @@ a{
     transition: padding-right .2s, background-color .4s;
 }
 
-.main_nav ul a:hover{
+/* Animação Menu com Acessibilidade */
+.main_nav ul a:hover,
+.main_nav ul a:focus{
     background-color: var(--secondary-color-light);
     padding-right: 1rem;
 }
@@ -98,4 +101,12 @@ a{
 .main_nav li{
     border-bottom: 1px solid #7b7b7b;
     padding: 0.4rem 0;
+}
+
+/* Decoração inicio paginas */
+.highlight{
+    border-left: 1px solid var(--primary-color);
+    font-size: 1.1em;
+    padding-left: 2em;
+    margin-bottom: 2.2em;
 }
