@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>My Components - Formulário</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/formulario.css">
+</head>
+
+<body>
+    <header class="main_header">
+        <nav class="main_nav">
+            <a href="#">
+                <img src="imagens/perfil.png" alt="João da Silva Sauro" class="perfil_img">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>My Components</h1>
+      
+        <article class="highlight">
+            <h2>Formulário</h2>
+        </article>
+
+        <section>
+            <h3>Entre em contato</h3>
+            <div class="row">
+
+                <form action="#">
+                    <div class="row">
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email">
+                        </div>
+                    </div>
+
+                    <label for="mensagem">Digite sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
+
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+
+                <address>
+                    <p><b>Endereço</b>: 1234 Somewhere Rd. Nashville, TN 00000 United States</p>
+                    <p><b>Telefone</b>: 000-000-000</p>
+                    <p><b>Email</b>: email@server.com</p>
+                </address>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
