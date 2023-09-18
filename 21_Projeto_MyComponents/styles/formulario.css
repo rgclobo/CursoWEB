@@ -1,6 +1,10 @@
+:root{
+    --default-gap: 3rem;
+}
+
 .row{
     display: flex;
-    gap: 1.2em;
+    gap: var(--default-gap);
     padding: 1.5rem 0;
     justify-content: space-between;
 }
@@ -45,7 +49,8 @@ input[type="checkbox"]{
 }
 
 .form-quiz{
-    width: calc(50% - 1.5rem);
+    /* width: calc(50% - 1.5rem); */
+    width: calc(50% - var(--default-gap) / 2);
 }
 
 
