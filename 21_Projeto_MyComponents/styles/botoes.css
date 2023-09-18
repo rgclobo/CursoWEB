@@ -1,0 +1,53 @@
+.row{
+    display: flex;
+    gap: 3rem;
+    padding: 1.5rem 0;
+    justify-content: space-between;
+}
+
+.row > *{
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%; */
+    flex: 1 0 0%;
+}
+
+.btn:hover, .btn:focus{
+    background-color: var(--secondary-color-dark);
+}
+
+.btn{
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color-dark);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* padding: 1.2rem; */
+    padding: .8em 1.2em;
+    border-radius: 5px;
+}
+
+.btn + .btn{
+    margin-left: 5rem;
+}
+
+.btn-big{
+    font-size: 1.6rem;
+}
+
+
+.btn-stroke{
+    background-color: transparent;
+}
+
+
+.btn-full{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-full + .btn-full{
+    margin-left: 0;
+    margin-top: 3rem;
+}
