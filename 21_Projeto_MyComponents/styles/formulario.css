@@ -35,6 +35,20 @@ select{
     border: 0;
 }
 
+input[type="radio"]{
+    width: auto;
+    margin-left: .5rem;
+}
+input[type="checkbox"]{
+    width: auto;
+    margin-right: .5rem;
+}
+
+.form-quiz{
+    width: calc(50% - 1.5rem);
+}
+
+
 .btn{
     background-color: var(--secondary-color);
     border: 2px solid var(--secondary-color-dark);
@@ -45,4 +59,8 @@ select{
 
 .btn:hover, .btn:focus{
     background-color: var(--secondary-color-dark);
+}
+
+.btn-stroke{
+    background-color: transparent;
 }

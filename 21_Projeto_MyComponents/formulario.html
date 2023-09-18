@@ -64,6 +64,32 @@
             </div>
 
         </section>
+
+        <section>
+            <h3>Quiz</h3>
+
+            <form action="" class="form-quiz">
+                <label for="tecnologias">Qual é a sua linguagem preferida?</label>
+                <select name="tecnologia" id="tecnologia">
+                    <option value="null">Selecione</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">Javascript</option>
+                </select>
+
+                <label>Baixa prioridade <input type="radio" name="prioridade" value="baixa"></label>
+                <label>Média prioridade <input type="radio" name="prioridade" value="media"></label>
+                <label>Alta prioridade <input type="radio" name="prioridade" value="alta"></label>
+
+                <label><input type="checkbox" name="copy" value="true">Envie-me uma cópia</label>
+                <label><input type="checkbox" name="human" value="true">Sou um humano</label>
+
+                <div class="row">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar" class="btn btn-stroke">
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 
