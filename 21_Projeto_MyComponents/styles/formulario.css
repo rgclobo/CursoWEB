@@ -12,6 +12,37 @@
     flex: 1 0 0%;
 }
 
+.row .row{
+    padding-top: 0;
+}
+
+input,
+label,
+textarea,
+select {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select{
+    background-color: #ccc;
+    padding: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    border: 0;
+}
+
 .btn{
-    
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color-dark);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus{
+    background-color: var(--secondary-color-dark);
 }
