@@ -1,8 +1,10 @@
 :root{
     --primary-color: #ff7833;
     --secondary-color: #31333b;
+    --secondary-color-transp:#31333bbb;
     --default-color: #e7e7e7;
     --secondary-color-light: #444856;
+    --secondary-color-light-transp: #4448565c;
     --secondary-color-dark: #23252d;
 }
 
@@ -18,6 +20,10 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
     line-height: 1.7;
+    background-image: url(../imagens/bg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{
@@ -55,11 +61,11 @@ section{
     flex-shrink: 0;
     flex-basis: 26rem; */
     flex: 0 0 26rem;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color-transp);
 }
 
 .main{
-    background-color: var(--secondary-color-light);
+    background-color: var(--secondary-color-light-transp);
     /* flex-grow: 1;
     flex-shrink: 0; */
     flex: 1 0;
@@ -99,7 +105,7 @@ a{
 /* Animação Menu com Acessibilidade */
 .main_nav ul a:hover,
 .main_nav ul a:focus{
-    background-color: var(--secondary-color-light);
+    background-color: var(--secondary-color-light-transp);
     padding-right: 1rem;
 }
 

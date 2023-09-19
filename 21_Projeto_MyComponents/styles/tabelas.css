@@ -25,19 +25,9 @@
 .table:not(.table-alternate) th{
     border-bottom: 2px solid var(--secondary-color-dark);
 }
-
-.table-alternate{
-
-}
-
 .table-alternate tbody tr:nth-child(odd) td{
     background-color: var(--secondary-color);
 }
-
-.table-verticalLines{
-
-}
-
 .table-verticalLines td:not(:last-child),
 .table-verticalLines th:not(:last-child){
     border-right: 1px solid var(--secondary-color-dark);
