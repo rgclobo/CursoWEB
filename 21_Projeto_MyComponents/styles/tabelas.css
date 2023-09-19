@@ -1,0 +1,44 @@
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td,
+.table th{
+    padding: 1.6rem;
+}
+
+
+.table th{
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+.table td:last-child,
+.table th:last-child{
+    text-align: right;
+}
+
+
+.table:not(.table-alternate) tr:not(:last-child) td,
+.table:not(.table-alternate) th{
+    border-bottom: 2px solid var(--secondary-color-dark);
+}
+
+.table-alternate{
+
+}
+
+.table-alternate tbody tr:nth-child(odd) td{
+    background-color: var(--secondary-color);
+}
+
+.table-verticalLines{
+
+}
+
+.table-verticalLines td:not(:last-child),
+.table-verticalLines th:not(:last-child){
+    border-right: 1px solid var(--secondary-color-dark);
+}
