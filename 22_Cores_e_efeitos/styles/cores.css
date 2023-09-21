@@ -4,7 +4,7 @@
 
 body {
     font-family: sans-serif;
-    background-image: linear-gradient(to top, rgba(0, 128, 96, 0.9) 50%, transparent 100%), url(../imagens/tile.png), url(../imagens/tile-pattern.png);
+    background-image: linear-gradient(to top, rgba(0, 128, 96, 0.9) 20%, transparent 100%), url(../imagens/tile.png), url(../imagens/tile-pattern.png);
     background-attachment: fixed, scroll;
     /* background-blend-mode: color; */
     /* Linear Gradiente */
@@ -42,4 +42,11 @@ section{
     display: inline-block;
     margin-bottom: 16px;
     font-weight: bold;
+}
+
+.cores:nth-of-type(2){
+    background-color: white;
+        /* a Propriedade 'background-clip', vai definir aonde vai ser aplicado
+        a cor de background */
+    background-clip: content-box;
 }
