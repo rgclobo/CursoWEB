@@ -50,3 +50,20 @@ section{
         a cor de background */
     background-clip: content-box;
 }
+
+.cores:nth-of-type(3){
+    /* Usando cores com 'hsl' é pelos graus de cores
+    muito util para usar a variação da mesma cor */
+    background-color: hsl(90deg, 100%, 50%);
+    box-shadow: 0 15px 6px -7px hsl(90deg, 100%, 20%) ;
+
+}
+
+.cores:nth-of-type(3):hover{
+    background-color: hsl(90deg, 100%, 80%);
+}
+
+.cores:nth-of-type(4){
+    background-color: hsla(39, 100%, 35%, 0.3) ;
+    box-shadow: 0 15px 6px -7px hsla(39, 100%, 75%, 0.7) ;
+}
