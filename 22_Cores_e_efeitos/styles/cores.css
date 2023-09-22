@@ -178,7 +178,7 @@ section{
 }
 
 .cores:nth-of-type(26){
-    background-image: linear-gradient( to top right, transparent 50%, red 50%);
+    background-image: linear-gradient( to top left, transparent 50%, red 50%);
     box-shadow: 10px 10px 6px rgba(0, 0, 0, .8);
 }
 

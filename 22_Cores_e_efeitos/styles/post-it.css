@@ -1,0 +1,27 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgb(165, 42, 42);
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, .5);
+    background-color: #ccc;
+    background-image: linear-gradient(to left top, #ccc 93% , brown 1% );
+    filter: drop-shadow(5px 5px 5px rgba(165, 42, 42, .8));
+ }
+
+ .card h2{
+    padding: 25px;
+    margin: 0;
+ }
+
+ .card p{
+    margin: 0;
+    padding: 25px;
+ }
