@@ -77,3 +77,7 @@ p{
 #d5{
     clip-path: inset(30px round 50px 20px 10px 0 / 20px 50px 35px 10%);
 }
+
+/*
+ Usar a ferramenta para usar o clip-path
+https://bennettfeely.com/clippy/ */
