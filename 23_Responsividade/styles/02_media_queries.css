@@ -1,7 +1,7 @@
 .label span{
     display: none;
 }
-
+/* Exemplo de responsividade */
 /* Media Queries */
 @media screen and (min-width:960px){
     body{
