@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Media Types</title>
+    <!-- Para informar que o estilo é para impressão, ao informar o css, colocar o atributo 'media="print"' -->
+    <link rel="stylesheet" href="styles/type_media_print.css" media="print">
+
+    <style>
+
+        /* @media screen{ > Vai setar que o estilo é apenas para visualização*/
+        body{
+            background-color: #ccc;
+            color: blue;
+            font-family: sans-serif;
+        }
+    /* } */
+    
+        /* @media print{
+            body{
+                color: black;
+                font-family: serif;
+            }
+        } */
+    </style>
+
+    <!-- Também é possivel colocar a folha de estilo 'print' após todos os estilos, para que não sobreescreva. -->
+
+</head>
+<body class="only-print">
+
+    <h1>Media Types</h1>
+
+    <a href="https://google.com" title="Visite nossa página">Google</a>
+    
+</body>
+</html>
