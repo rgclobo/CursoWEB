@@ -1,0 +1,35 @@
+.label span{
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (min-width:960px){
+    body{
+        background-color: green;
+    }
+    /* mostre o span 1 */
+    #res1{
+        display: initial;
+    }
+}
+
+
+@media screen and (min-width:481px) and (max-width:959px){
+    body{
+        background-color: blue;
+    }
+    /* mostre o span 2 */
+    #res2{
+        display: initial;
+    }
+}
+
+@media screen and (max-width:480px){
+    body{
+        background-color: red;
+    }
+    /* mostre o span 3 */
+    #res3{
+        display: initial;
+    }
+}
