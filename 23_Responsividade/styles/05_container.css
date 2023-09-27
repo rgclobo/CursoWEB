@@ -8,11 +8,6 @@ flex-direction: column;
 gap: 1em;
 }
 
-.card_wrapper, 
-main{
-    /*  */
-    container-type: inline-size;
-}
 
 .card{
     border: 2px solid #999;
@@ -60,8 +55,28 @@ main{
 
 /* abaixo formatação para outros dispositivos */
 
+/* Deixar o container como referencia para viewport */
+/* .card_wrapper, 
+main{
+    container-type: inline-size;
+} */
+
+/* Nomeando os container para facilitar a identificação */
+.card_wrapper{
+    /* container-name: cardWrapper; */
+    /* Abaixo com abreviatura do comando container-type e o container-name */
+    container: cardWrapper / inline-size;
+}
+main{
+    /* container-name: main; */
+     /* Abaixo com abreviatura do comando container-type e o container-name */
+     container: main / inline-size;
+}
+
+
 /* @media screen and (min-width: 50em){ */
-@container (min-width: 50em){
+    /* Medindo o container ao invés da viewport */
+@container cardWrapper (min-width: 50em){
     .card{
         flex-direction: row;
     }
@@ -72,7 +87,8 @@ main{
 }
 
 /* @media screen and (min-width: 70em){ */
-@container (min-width: 70em){
+    /* Medindo o container ao invés da viewport */
+@container main (min-width: 70em){
     .cards_container{
         flex-direction: row;
     }
