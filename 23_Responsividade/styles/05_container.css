@@ -1,0 +1,44 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.card{
+    border: 2px solid #999;
+}
+
+.card_header img{
+    display: block;
+
+    width: 100%;
+    max-height: 10em;
+    /* a 'object-fit' tem as propriedades parecidas com 'background-size */
+    object-fit: cover;
+    /* 'object-position', vai posicionar a imagem */
+    object-position: center;
+
+    
+}
+
+.card_body{
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.card_body p{
+    margin: 0 0 1em;
+}
+
+.card_btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #5a5959;
+    padding: .75em 1em;
+    color: white;
+    transition: .5s background-color;
+    display: inline-block;
+}
+.card_btn:hover{
+    background-color: #373737;
+}
