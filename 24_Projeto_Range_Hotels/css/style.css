@@ -6,8 +6,13 @@ html{
     font-family: sans-serif;
 }
 
+h1,h2,h3,h4{
+    font-family: 'Oxygen', sans-serif;
+}
+
 .maxWidth{
     max-width: 70.25em;
+    margin: auto;
 }
 
 .top_header{
@@ -19,6 +24,7 @@ html{
 .top_header_nav ul{
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .top_header_nav a{
@@ -61,4 +67,42 @@ html{
     .top_header_nav a:hover{
         background-color: color-mix(in srgb, var(--primary-color), white 70%);
     }
+}
+
+
+/* HeroBanner */
+
+.heroBanner{
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 1em;
+}
+
+.heroBanner_iconPlay{
+    height: 5em;
+    width: 5em;
+    display: none;
+}
+
+.heroBanner_iconPlay img{
+    width: 100%;
+}
+
+.heroBanner_title{
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+.heroBanner_subtitle{
+    font-size: 1em;
+    color: color-mix(in srgb, var(--primary-color), white);
+}
+
+.heroBanner_btn{
+    display: inline-block;
+    padding: .9em 2.5em;
+    background-color: #58c4c4;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
 }
