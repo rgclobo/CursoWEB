@@ -1,56 +1,64 @@
+:root{
+    --primary-color: #612674;
+}
+
 html{
-    font-size: 62.5%;
+    font-family: sans-serif;
 }
 
-.header_top{
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.maxWidth{
+    max-width: 70.25em;
 }
 
-.header_logo{
-    background-color: bisque;
-    width: 220px;
-}
-
-
-.header_nav{
-    background-color: brown;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.top_header{
     text-align: center;
-    color: white;
-   
 }
-.header_nav ul{
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
+.top_header_nav{
+    background-color: var(--primary-color);
 }
-
-.header_nav li{
+.top_header_nav ul{
     list-style-type: none;
-    padding: 1em 0;
-    background-color: blueviolet;
+    padding: 0;
 }
 
-@media screen and (min-width:960px){
-    .header_top{
-        flex-direction: row;
+.top_header_nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.top_header_nav a:hover{
+    background-color: color-mix(in srgb, var(--primary-color), black 30%);
+}
+
+/* Acima Mobile */
+
+/* Abaixo dispostivos maiores que 780px */
+
+@media screen and (min-width: 48.75em){
+    .top_header{
+        display: flex;
+        justify-content: space-between;
+          
     }
 
-    .header_nav{
-        flex-direction: row-reverse;
+    .top_header_logo{
+        margin-left: 1.5em;
+    }
+    .top_header_nav{
+        background-color: initial;
     }
 
-    .header_nav ul{
-        flex-direction: row;
+    .top_header_nav li{
+        display: inline-block;
     }
 
-    .header_nav li{
-        background-color: aqua;
-        padding: 1.6rem 2rem;
+    .top_header_nav a{
+        color: var(--primary-color);
+    }
+
+    .top_header_nav a:hover{
+        background-color: color-mix(in srgb, var(--primary-color), white 70%);
     }
 }
