@@ -41,7 +41,7 @@ h1,h2,h3,h4{
 /* Acima Mobile */
 
 /* Abaixo dispostivos maiores que 780px */
-
+/* col-md */
 @media screen and (min-width: 48.75em){
     .top_header{
         display: flex;
@@ -109,6 +109,7 @@ h1,h2,h3,h4{
     border-radius: 5px;
 }
 
+/* col-md */
 @media screen and (min-width: 48.75em){
     .heroBanner{
         background-color: var(--primary-color);
@@ -126,6 +127,7 @@ h1,h2,h3,h4{
     }
 }
 
+/*  col-lg */
 @media screen and (min-width:56.25em){
     .heroBanner{
         background-image: url(../images/bg_topo_1198x670.jpg);
@@ -143,6 +145,7 @@ h1,h2,h3,h4{
     }
 }
 
+/* col-xl */
 @media screen and (min-width:74em){
     .heroBanner{
         background-image: linear-gradient(transparent, var(--primary-color)), url(../images/bg_topo_1600x1374.jpg);
@@ -166,3 +169,11 @@ h1,h2,h3,h4{
         text-shadow: 4px 4px 2px rgb(0 0 0 / .8);
     }
 }
+
+
+/* 
+min-width: 0        ->  col-sm
+min-width: 48.75em  ->  col-md
+min-width: 56.25em  ->  col-lg
+min-width: 74em     ->  col-xl
+*/
