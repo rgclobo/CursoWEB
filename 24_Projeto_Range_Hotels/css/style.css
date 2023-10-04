@@ -1,6 +1,6 @@
 :root{
     --primary-color: #612674;
-    --default-gap: 1rem;
+    --default-gap: 1em;
 }
 
 html{
@@ -237,4 +237,42 @@ min-width: 74em     ->  col-xl
     .col-xl-3{
         width: calc(25% - var(--default-gap));
     }
+
+    .col-xl-6{
+        width: calc(50% - var(--default-gap));
+    }
 }
+
+
+/* Main Content */
+
+.mainContent{
+    padding: 2em;
+}
+
+.mainContent p{
+    line-height: 1.2;
+}
+
+.mainContent_img img{
+    width: 100%;
+}
+
+.mainContent_title{
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: normal;
+    letter-spacing: .2em;
+    font-size: 1.25em;
+}
+
+.mainContent .row{
+    /* Existe a possibilidade de colocar o gap tanto na propriedade
+    'row' quanto na 'column'
+      A propriedade 'gap' é o atalho para 'row-gap' e colum-gap'  */
+    /* gap: 4em; - Deu conflito com a variavel de gap setada, por isso 
+    usaremos o valor apenas em 'row-gap' para manter o que estava certo
+    pela variavel */
+    row-gap: 4em;
+}
+
