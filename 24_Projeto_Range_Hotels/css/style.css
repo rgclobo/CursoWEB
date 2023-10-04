@@ -276,3 +276,10 @@ min-width: 74em     ->  col-xl
     row-gap: 4em;
 }
 
+@media screen and (min-width:37.5em){
+    .mainContent_article{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1em;
+    }
+}
