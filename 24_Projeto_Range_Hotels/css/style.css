@@ -280,7 +280,7 @@ min-width: 74em     ->  col-xl
     container: main-content / inline-size;
 }
 
-@container main-content (min-width: 500px){
+@container main-content (min-width: 31.25em){
     .mainContent_container{
         display: flex;
         gap: var(--default-gap);
@@ -289,4 +289,19 @@ min-width: 74em     ->  col-xl
     .mainContent_title{
         margin-top: 0;
     }
+
+    .mainContent_img{
+        max-height: 200px;
+    }
+}
+
+.footer{
+    background-color: #25303e;
+    padding: 2em;
+}
+
+.footer p{
+    color: #83969f;
+    text-align: center;
+    font-size: 1.15em;
 }
