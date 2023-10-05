@@ -290,8 +290,19 @@ min-width: 74em     ->  col-xl
         margin-top: 0;
     }
 
+    .mainContent_img img{
+        max-height: 23.81em;
+    }
+
     .mainContent_img{
-        max-height: 200px;
+        /* flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 25%; */
+        flex: 0 0 25%;
+    }
+
+    .mainContent_text{
+        flex-grow: 1;
     }
 }
 
