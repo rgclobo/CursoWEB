@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        .gridContainer {
+            width: 300px;
+            background: #ccc;
+        }
+
+        .gridItem {
+            background: #999;
+            font-size: 2em;
+            font-family: sans-serif;
+            padding: 5px 15px;
+        }
+
+        .gridItem:nth-child(even) {
+            background: #999;
+            color: white;
+        }
+
+        .gridItem:nth-child(odd) {
+            background: #eee;
+        }
+
+        /* GRID */
+
+        .gridContainer{
+            display: grid;
+            /* grid-template-columns - determina o n. de colunas com o seu tamanho.
+            podendo ter tamanhos diferentes */
+            /* A propriedade 'repeat' determina quantas vezes vai repetir a linha ou coluna com seu tamanho.
+            Podendo também colocar valores diferentes fora do repeat. */
+                    /* grid-template-columns: repeat(2, 75px) 150px; */
+            /* grid-template-rows - determina o n. de linhas com os seus tamanhos.
+            podendo ter tamanho diferentes */
+                     /* grid-template-rows: 100px 100px; */
+            /* row-gap - coloca gap apenas nas linhas */
+                /* row-gap: 10px; */
+            /* column-gap - coloca gap apenas nas colunas */
+                /* column-gap: 15px; */
+            /* a propriedade 'gap' é o atalho para as duas acima */
+            gap: 10px 15px;
+            
+
+            /* A unidade de medida fr é uma fração do tamanho da grid, podendo ser intercalada com valores fixos. */
+            grid-template-columns: 1fr repeat(2, 125px);
+            grid-template-rows: 1fr 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Grid Layout</h2>
+
+
+    <div class="gridContainer">
+        <div class="gridItem">1</div>
+        <div class="gridItem">2</div>
+        <div class="gridItem">3</div>
+        <div class="gridItem">4</div>
+        <div class="gridItem">5</div>
+        <div class="gridItem">6</div>
+    </div>
+</body>
+
+</html>
