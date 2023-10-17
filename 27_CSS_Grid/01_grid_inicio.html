@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        .gridContainer {
+            width: 300px;
+            background: #ccc;
+        }
+
+        .gridContainer2 {
+            width: 300px;
+            background: #ccc;
+        }
+
+        .gridItem {
+            background: #999;
+            font-size: 2em;
+            font-family: sans-serif;
+            padding: 5px 15px;
+        }
+
+        .gridItem:nth-child(even) {
+            background: #999;
+            color: white;
+        }
+
+        .gridItem:nth-child(odd) {
+            background: #eee;
+        }
+
+        /* GRID */
+        .gridContainer{
+            display: grid;
+            grid-template-columns: 100px 400px;
+            grid-template-rows: 80px 400px 50px;
+        }
+
+
+        .gridContainer2{
+            display: grid;
+            grid-template-columns: repeat(2, 75px) repeat(3, 100px) 200px;
+            grid-template-rows: repeat(2, 100px) repeat(3, 75px) 50px;
+        }
+
+        .gridContainer3{
+            display: grid;
+            grid-template-columns: 100px 400px;
+            grid-template-rows: 80px 400px 50px;
+        }
+
+        .gridItem1{
+            background-color: aqua;
+        }
+         .gridItem2{
+            background-color: pink;
+         }
+
+         .gridItem3{
+            background-color: red;
+         }
+         .gridItem4{
+            background-color: bisque;
+         }
+         .gridItem5{
+            background-color: aquamarine;
+         }
+         .gridItem6{
+            background-color: rgb(26, 110, 184);
+         }
+
+        
+    </style>
+</head>
+
+<body>
+    <h2>Grid Layout</h2>
+
+
+    <div class="gridContainer">
+        <div class="gridItem">1</div>
+        <div class="gridItem">2</div>
+        <div class="gridItem">3</div>
+        <div class="gridItem">4</div>
+        <div class="gridItem">5</div>
+        <div class="gridItem">6</div>
+    </div>
+    <hr>
+    <div class="gridContainer2">
+        <div class="gridItem">1</div>
+        <div class="gridItem">2</div>
+        <div class="gridItem">3</div>
+        <div class="gridItem">4</div>
+        <div class="gridItem">5</div>
+        <div class="gridItem">6</div>
+    </div>
+    <hr>
+    <div class="gridContainer3">
+        <div class="gridItem1">LOGO</div>
+        <div class="gridItem2">BANNER</div>
+        <div class="gridItem3">MENU</div>
+        <div class="gridItem4">CONTEUDO</div>
+        <div class="gridItem5">FOOTER</div>
+        <div class="gridItem6">FOOTER1</div>
+    </div>
+</body>
+
+</html>
