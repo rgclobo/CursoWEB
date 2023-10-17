@@ -10,7 +10,7 @@
     <style>
         .gridContainer {
             width: 300px;
-            background: #ccc;
+            background: #5a5959;
         }
 
         .gridItem {
@@ -30,19 +30,29 @@
         }
 
         /* GRID */
-
         .gridContainer{
+            width: 100%;
             display: grid;
-            /* grid-template-columns - determina o n. de colunas com o seu tamanho.
-            podendo ter tamanhos diferentes */
-            /* A propriedade 'repeat' determina quantas vezes vai repetir a linha ou coluna com seu tamanho.
-            Podendo também colocar valores diferentes fora do repeat. */
-            grid-template-columns: 100px 100px 100px;
-            /* grid-template-rows - determina o n. de linhas com os seus tamanhos.
-            podendo ter tamanho diferentes */
-            grid-template-rows: 100px 100px;
+            grid-template-columns: 50px 1fr 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px 5px;
+        }
+
+        .gridItem:nth-child(1){
+            background-color: yellow;
+            /* grid-row-start/end - Vai determinar quantas linhas vão ocupar o item no grid.*/
+                /* grid-row-start: 1;
+                grid-row-end: 2; */
+            /* Atalho para as propriedades anteriores 'grid-row' */
+            grid-row: 1 / 2;
+            /* grid-column-start/end - Vai determnar quantas colunas vão ocupar o item no grid */
+                /* grid-column-start: 1;
+                grid-column-end: -2; */
+            /* Atalho para as propriedades anteriores 'grid-column' */
+            grid-column: 1 / -2;
 
         }
+        
     </style>
 </head>
 
@@ -50,14 +60,14 @@
     <h2>Grid Layout</h2>
 
 
-    div class="gridContainer">
+    <div class="gridContainer">
         <div class="gridItem">1</div>
         <div class="gridItem">2</div>
         <div class="gridItem">3</div>
         <div class="gridItem">4</div>
         <div class="gridItem">5</div>
         <div class="gridItem">6</div>
-    </div><
+    </div>
 </body>
 
 </html>
