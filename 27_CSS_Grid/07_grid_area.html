@@ -9,7 +9,7 @@
 
     <style>
         .gridContainer {
-            width: 320px;
+            width: 330px;
             background: #ccc;
         }
 
@@ -49,9 +49,20 @@
             /* É possivel expandir a coluna ou linha, utilizando a propriedade 'span' */
             /* grid-column: 1 / span 3; */
             /* Sem expecificar de onde começa, ele expande de onde está */
-            grid-column: span 3;
+            grid-column: 2 /span 3;
 
+        }
 
+        .gridItem:nth-child(5){
+            /* ATENÇÃO NA SEQUENCIA PARA USAR EM 'grid-area' */
+            /* grid-row-start: 2;
+            grid-column-start: 1;
+            grid-row-end: 4;
+            grid-column-end: 2; */
+            
+            /* É possivel colocar todas as propriedades acima utilizando apenas a 
+            propriedade 'grid-area' como mostra exemplo abaixo. */
+            grid-area: 2 / 1 / 4 / 2;
         }
 
 
