@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Desafio Calculadora</title>
+
+    <style>
+        body{
+            background-color: rgb(15, 15, 64);
+            color: white;
+        }
+
+        .gridContainer{
+            background-color: blueviolet;
+            width: 500px;
+            margin: ;
+        }
+
+        .gridItem{ 
+            background-color: black;
+            font-family: sans-serif;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* GRID */
+
+        .gridContainer{
+            display: grid;
+            gap: 5px;
+
+            grid-template-columns: repeat(4, 25px);
+            /* grid-template-rows: repeat(12, 20px); */
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gridContainer">
+        <div class="gridItem gridItem-0">0</div>
+        <div class="gridItem gridItem-ac">AC</div>
+        <div class="gridItem gridItem-%">%</div>
+        <div class="gridItem gridItem-x">x</div>
+        <div class="gridItem gridItem-/">/</div>
+        <div class="gridItem gridItem-7">7</div>
+        <div class="gridItem gridItem-8">8</div>
+        <div class="gridItem gridItem-9">9</div>
+        <div class="gridItem gridItem-=">=</div>
+        <div class="gridItem gridItem-4">4</div>
+        <div class="gridItem  gridItem-5">5</div>
+        <div class="gridItem gridItem-6">6</div>
+        <div class="gridItem gridItem--">-</div>
+        <div class="gridItem gridItem-1">1</div>
+        <div class="gridItem gridItem-2">2</div>
+        <div class="gridItem gridItem-3">3</div>
+        <div class="gridItem gridItem-+">+</div>
+        <div class="gridItem gridItem-0">0</div>
+        <div class="gridItem gridItem-.">.</div>
+    </div>
+    
+</body>
+</html>
