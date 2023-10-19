@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .gridContainer {
+            width: 90%;
+            background: #ccc;
+        }
+
+        .gridItem {
+            background-color: orange;
+            padding: 15px;
+            font-family: sans-serif;
+        }
+
+        /* GRID */
+
+        .gridContainer {
+            display: grid;
+            gap: 10px;
+
+            /* A propriedade 'auto-fill' faz com que novas colunas sejam criadas automaticamente
+            e a proprieade 'auto-fit' faz com que se ajuste ao tamanho */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            /* grid-template-rows: 100px 100px; */
+
+            /* Ao criar linhas automaticas com o tamanho pré-definido */
+            /* Sendo possivel mesclar valores */
+                /* grid-auto-rows: 100px 50px; */
+
+            /* Com a propriedade 'minmax(x, 2x)' é possivel colocar o tamanho minimo da célula,
+            e também o máximo, podendo colocar o valor 'auto' para que comporte todo tamanho do conteudo. */
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="gridContainer">
+        <div class="gridItem">1</div>
+        <div class="gridItem">2</div>
+        <div class="gridItem">3</div>
+        <div class="gridItem">4</div>
+        <div class="gridItem">5</div>
+        <div class="gridItem">6</div>
+        <!-- <div class="gridItem">7</div>
+        <div class="gridItem">8</div>
+        <div class="gridItem">9</div>
+        <div class="gridItem">10</div>
+        <div class="gridItem">11</div>
+        <div class="gridItem">12</div> -->
+    </div>
+</body>
+
+</html>
