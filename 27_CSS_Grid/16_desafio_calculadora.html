@@ -7,57 +7,95 @@
 
     <style>
         body{
-            background-color: rgb(15, 15, 64);
+            min-height: 100vh;
+            background-image: linear-gradient(#5656ff, #0f0f8b );
             color: white;
         }
 
         .gridContainer{
+            margin: auto;
             background-color: blueviolet;
-            width: 500px;
-            margin: ;
+            width: 250px ;
+            padding: 20px;
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 1px 1px 10px 1px #0e0e0ee9;
+        
         }
 
-        .gridItem{ 
-            background-color: black;
-            font-family: sans-serif;
+        .gridContainer div{
+            font-family: Arial, Helvetica, sans-serif;
+            outline: 1.5px solid ;
+            text-align: center;
             padding: 10px;
-            margin: 10px;
+            background-color: #232323;
+
+            
         }
+
+        div .visor{
+            margin-bottom: 12px;
+            padding: 15px;
+            text-align: end;
+        }
+
 
         /* GRID */
 
         .gridContainer{
             display: grid;
-            gap: 5px;
-
-            grid-template-columns: repeat(4, 25px);
-            /* grid-template-rows: repeat(12, 20px); */
-
+            gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
         }
+
+       .visor{
+            grid-column: span 4;      
+        }
+
+        .soma{
+            grid-column: 4;
+            grid-row: span 2;
+        }
+
+        .zero{
+            grid-column: span 2;
+        }
+
+
     </style>
 </head>
 <body>
 
+    
+
+
+
     <div class="gridContainer">
-        <div class="gridItem gridItem-0">0</div>
-        <div class="gridItem gridItem-ac">AC</div>
-        <div class="gridItem gridItem-%">%</div>
-        <div class="gridItem gridItem-x">x</div>
-        <div class="gridItem gridItem-/">/</div>
-        <div class="gridItem gridItem-7">7</div>
-        <div class="gridItem gridItem-8">8</div>
-        <div class="gridItem gridItem-9">9</div>
-        <div class="gridItem gridItem-=">=</div>
-        <div class="gridItem gridItem-4">4</div>
-        <div class="gridItem  gridItem-5">5</div>
-        <div class="gridItem gridItem-6">6</div>
-        <div class="gridItem gridItem--">-</div>
-        <div class="gridItem gridItem-1">1</div>
-        <div class="gridItem gridItem-2">2</div>
-        <div class="gridItem gridItem-3">3</div>
-        <div class="gridItem gridItem-+">+</div>
-        <div class="gridItem gridItem-0">0</div>
-        <div class="gridItem gridItem-.">.</div>
+        <div class="visor">0</div>
+
+        <div>AC</div>
+        <div>%</div>
+        <div>X</div>
+        <div>/</div>
+
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>=</div>
+
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+
+        <div class="soma">+</div>
+
+        <div class="zero">0</div>
+
+        <div>,</div>
     </div>
     
 </body>
