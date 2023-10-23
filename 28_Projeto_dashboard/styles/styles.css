@@ -1,20 +1,26 @@
 :root{
+    /* Colors */
     --primary-color: #004eda;
+    --color-text: #5A5A5F;
     --grey: #F2F2F8;
+    --black: #111;
+
+    /* Measures */
+    --default-padding: 2rem;
 }
 
 /* RESET */
 *{
     margin: 0;
-    /* padding: 0; */
-    /* border: 0; */
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
     list-style: none;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
-
+    color: var(--color-text);
 
     /* GRID */
     display: grid;
@@ -28,19 +34,85 @@ img{
 
 
 .mainNav{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
     /* GRID */
     grid-row: 1 / -1;
     grid-column: 1 / 2;
-    background-color: rgba(255, 0, 0, 0.412);
+}
+
+.mainNav_linkLogo{
+    padding-left: var(--default-padding);
+    padding-top: var(--default-padding);
+    display: inline-block;
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.mainNav_menus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-top: var(--default-padding);
+}
+
+.mainNav_menu:last-child{
+    padding-bottom: var(--default-padding);
+}
+
+.mainNav_menu,  .topNav_menu{
+    padding-left: var(--default-padding);
+}
+
+.mainNav_menu a,  .topNav_menu a{
+    text-decoration: none;
+    color: #5a5a5f;
+
 }
 
 .topNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /* GRID */
     grid-row: 1 / 2;
     grid-column: 2 / -1;
-    background-color: rgba(0, 0, 255, 0.393);
+}
+
+.topNav_menu{
+    display: flex;
+    gap: var(--default-padding);
+
+}
+
+
+.perfil{
+    margin-right: var(--default-padding);
+}
+
+.perfil_name{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.perfil_rule{
+    font-size: .7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--blacks), transparent 60%);
 }
 
 main{
+
+
+    /* GRID */
     grid-row: 2 / -1;
     grid-column: 2 / -1;
     background-color: orange;
