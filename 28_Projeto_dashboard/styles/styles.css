@@ -26,8 +26,9 @@ body{
 
     /* GRID */
     display: grid;
-    grid-template-columns: 240px 1fr;
-    grid-template-rows: 64px auto;
+    grid-template-columns: max-content 1fr;
+    /* grid-template-rows: 64px auto; */
+    grid-template-rows: 4rem minmax(calc(100vh - 4rem auto));
 }
 
 img{
@@ -40,6 +41,7 @@ img{
     flex-direction: column;
     background-color: white;
     max-height: 100vh;
+    padding-right: var(--default-padding);
     /* Menu fixo */
     position: sticky;
     top: 0;
@@ -57,6 +59,7 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5em;
+    padding-right: var(--default-padding);
 }
 
 .mainNav_menus{
@@ -65,6 +68,10 @@ img{
     justify-content: space-between;
     flex-grow: 1;
     padding-top: var(--default-padding);
+}
+
+.mainNav_menu{
+    padding-right: var(--default-padding);
 }
 
 .mainNav_menu:last-child{
@@ -87,6 +94,13 @@ img{
 .mainNav_menu li:not(:first-child){
     margin-top: var(--middle-padding);
 }
+
+.mainNav_menu:not(:last-child){
+    border-bottom: 2px solid var(--grey);
+    padding-bottom: var(--default-padding);
+}
+
+
 
 
 .topNav{
@@ -176,14 +190,14 @@ main > .grid-half{
 }
 
 
-.summary .number{
+.summary_number{
     font-size: 1.2rem;
     color: var(--primary-color);
     font-weight: 600;
     margin-left: var(--middle-padding);
 }
 
-.separeted{
+.summary_separeted{
     height: 100%;
     width: 2px;
     background-color: var(--grey);
@@ -198,7 +212,7 @@ main > .grid-half{
     padding: calc(var(--middle-padding) / 2) var(--middle-padding);
 }
 
-/* .summary .btn{
+/* .summary_btn{
     align-self: stretch;
     display: flex;
     align-items: center;
