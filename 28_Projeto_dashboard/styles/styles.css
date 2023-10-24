@@ -39,6 +39,10 @@ img{
     display: flex;
     flex-direction: column;
     background-color: white;
+    max-height: 100vh;
+    /* Menu fixo */
+    position: sticky;
+    top: 0;
 
     /* GRID */
     grid-row: 1 / -1;
@@ -74,13 +78,16 @@ img{
 .mainNav_menu a,  .topNav_menu a{
     text-decoration: none;
     color: #5a5a5f;
-
 }
 
 .mainNav_menu svg,  .topNav_menu svg{
     vertical-align: bottom;
-
 }
+
+.mainNav_menu li:not(:first-child){
+    margin-top: var(--middle-padding);
+}
+
 
 .topNav{
     display: flex;
@@ -175,11 +182,6 @@ main > .grid-half{
     font-weight: 600;
     margin-left: var(--middle-padding);
 }
-
-/* span > .description, span > .number{ 
-    vertical-align: bottom;
-} */
-
 
 .separeted{
     height: 100%;
