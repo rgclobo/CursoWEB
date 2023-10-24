@@ -75,6 +75,11 @@ img{
 
 }
 
+.mainNav_menu svg,  .topNav_menu svg{
+    vertical-align: bottom;
+
+}
+
 .topNav{
     display: flex;
     justify-content: space-between;
@@ -94,6 +99,20 @@ img{
 
 .perfil{
     margin-right: var(--default-padding);
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.perfil_thumb{
+    height: 100%;
+    padding: .5em 0;
+    margin-right: calc(var(--default-padding) / 2);
+
+}
+
+.perfil_thumb img{
+    height: 100%;
 }
 
 .perfil_name{
