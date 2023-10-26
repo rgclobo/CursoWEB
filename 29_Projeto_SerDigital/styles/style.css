@@ -15,6 +15,8 @@ body {
 
 .content-wrapper-center {
     padding: 1rem;
+    max-width: 67.25em;
+    margin: auto;
 }
 
 .header-menu {
@@ -157,6 +159,8 @@ img {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 3rem;
+    grid-auto-flow: dense;
+    /* A propriedade 'dense' faz com que preencha os espaços em branco */
 }
 
 .row > .sm-12{
@@ -178,6 +182,18 @@ lg - min-width: 90em
         grid-column: span 4;
     }
 
+    .row > .md-6{
+        grid-column: span 6;
+    }
+
+    .row > .md-1-6{
+        grid-column: 1 / 7;
+    }
+
+    .row > .md-7-12{
+        grid-column: 7 / 13;
+    }
+
     .row > .md-9{
         grid-column: span 9;
     }
@@ -188,7 +204,23 @@ lg - min-width: 90em
         grid-column: span 3;
     }
 
+    .row > .lg-5{
+        grid-column: span 5;
+    }
+
     .row > .lg-6{
         grid-column: span 6;
+    }
+
+    .row > .lg-7{
+        grid-column: span 7;
+    }
+
+    .row > .lg-1-5{
+        grid-column: 1 / 6 ;
+    }
+
+    .row > .lg-8-12{
+        grid-column: 8 / 13;
     }
 }
