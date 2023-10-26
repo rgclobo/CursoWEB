@@ -13,6 +13,10 @@ body {
     margin: 0;
 }
 
+.imagem{
+    text-align: center;
+}
+
 .content-wrapper-center {
     padding: 3rem 1rem 2rem;
     max-width: 67.25rem;
@@ -28,7 +32,6 @@ body {
     padding: 0;
     text-align: right;
 
-    /*TODO: Funcionar com Hamburguer menu  */
     display: none;
 
     
@@ -113,6 +116,11 @@ img {
     padding: 1rem;
 }
 
+.testemunho_thumb{
+    width: 8.125rem;
+    height: 8.125rem;
+}
+
 
 .contato {
     background-color: var(--gray);
@@ -127,7 +135,6 @@ img {
 
 .footer {
     background-color: var(--gray);
-    padding: 3rem 0;
 }
 
 .footer ul {
@@ -191,6 +198,41 @@ lg - min-width: 90em
 */
 
 @media screen and (min-width: 46.25em){
+
+    body{
+        text-align: left;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+}
+
+    .header-menu {
+        /* Mostra menu */
+        display: block;
+    }
+
+    .header-menu a{
+        padding: 1rem;
+    }
+
+    .header-menu li{
+        display: inline-block;
+        margin-left: 1.5rem;
+    }
+
+    .testemunho{
+        display: flex;
+        /* align-items: center; */
+        gap: 1rem;
+    }
+
+    .contato_image{
+        display: block;
+        text-align: center;
+    }
     
     .row{
         gap: 1rem;
