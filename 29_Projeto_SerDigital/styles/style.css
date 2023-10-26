@@ -15,7 +15,7 @@ body {
 
 .content-wrapper-center {
     padding: 1rem;
-    max-width: 67.25em;
+    max-width: 67.25rem;
     margin: auto;
 }
 
@@ -158,7 +158,7 @@ img {
 .row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 3rem;
+    gap: .5rem;
     grid-auto-flow: dense;
     /* A propriedade 'dense' faz com que preencha os espaços em branco */
 }
@@ -174,6 +174,11 @@ lg - min-width: 90em
 */
 
 @media screen and (min-width: 46.25em){
+    
+    .row{
+        gap: 1rem;
+    }
+    
     .row > .md-3{
         grid-column: span 3;
     }
@@ -200,8 +205,16 @@ lg - min-width: 90em
 }
 
 @media screen and (min-width: 90em){
+    .row{
+        gap: 3rem;
+    }
+    
     .row > .lg-3{
         grid-column: span 3;
+    }
+
+    .row > .lg-4{
+        grid-column: span 4;
     }
 
     .row > .lg-5{
