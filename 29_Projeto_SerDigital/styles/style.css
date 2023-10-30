@@ -86,6 +86,9 @@ img {
     max-width: 100%;
 }
 
+.brands{
+    text-align: center;
+}
 
 .brands h2 {
     font-size: 1rem;
@@ -199,11 +202,13 @@ img {
     grid-column: 1 / 13;
 }
 
-
-/* 
-md - min-width: 46.25em
-lg - min-width: 90em 
-*/
+.icons li{
+    display: inline-block;
+    font-size: 2rem;
+}
+.icons li + li{
+    margin-left: 1rem;
+}
 
 .testemunho_card{
     display: flex;
@@ -214,12 +219,17 @@ lg - min-width: 90em
     text-align: center;
 }
 
-@container testemunhoCard (min-width: 675px){
+@container testemunhoCard (min-width: 42.187em){
     .testemunho_card{
         flex-direction: row;
         text-align: left;
     }
 }
+
+/* 
+md - min-width: 46.25em
+lg - min-width: 90em 
+*/
 
 @media screen and (min-width: 46.25em){
 
