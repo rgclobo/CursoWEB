@@ -202,12 +202,21 @@ lg - min-width: 90em
     body{
         text-align: left;
     }
+
+    h1 {
+        font-size: 3.625rem;
+    }
+    
+    h2 {
+        font-size: 2.875rem;
+    }
+
     .header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0;
-}
+    }
 
     .header-menu {
         /* Mostra menu */
@@ -264,6 +273,17 @@ lg - min-width: 90em
 }
 
 @media screen and (min-width: 90em){
+
+    .hero_title{
+        margin-bottom: 6.25rem;
+    }
+
+    .testemunho{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .row{
         gap: 3rem;
     }
@@ -292,7 +312,13 @@ lg - min-width: 90em
         grid-column: 1 / 6 ;
     }
 
+    .row > .lg-1-7{
+        grid-column: 1 / 8;
+    }
+
     .row > .lg-8-12{
         grid-column: 8 / 13;
     }
 }
+
+/* Container */
