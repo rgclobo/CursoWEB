@@ -37,7 +37,7 @@ body {
     padding: 0;
     text-align: right;
 
-    display: none;
+    /* display: none; */
 
     
 }
@@ -218,7 +218,7 @@ img {
     align-items: center;
     text-align: center;
 }
-
+/* Container */
 @container testemunhoCard (min-width: 42.187em){
     .testemunho_card{
         flex-direction: row;
@@ -246,15 +246,15 @@ lg - min-width: 90em
     }
 
     .header{
-        display: flex;
-        justify-content: space-between;
         align-items: center;
-        margin: 0;
+    }
+
+    .menu-btn, .menu-icon{
+        display: none;
     }
 
     .header-menu {
-        /* Mostra menu */
-        display: block;
+        margin: 0;
     }
 
     .header-menu a{
@@ -343,5 +343,48 @@ lg - min-width: 90em
     }
 }
 
-/* Container */
+/* Hamburger Menu */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
 
+.header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu-icon{
+    position: relative;
+    cursor: pointer;
+    /* user-select: none; */
+}
+
+.nav-icon{
+    background-color: #333;
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    position: relative;
+}
+
+.nav-icon::after,
+.nav-icon::before{
+    content: "";
+    background-color: #333;
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    position: absolute;
+}
+
+.nav-icon::after{
+    transform: translateY(8px);
+    background-color: red;
+}
+
+.nav-icon::before{
+    transform: translateY(-8px);
+    background-color: blue;
+}
