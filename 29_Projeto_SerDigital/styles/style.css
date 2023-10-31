@@ -355,7 +355,8 @@ lg - min-width: 90em
     top: 100px;
     max-height: 0;
     overflow: hidden;
-    background-color: red;
+    /* background-color: rgb (142 173 213 / .3,); */
+    background-color: white;
     transition: max-height .3s;
     margin: 0;
     padding: 0 1em;
@@ -364,6 +365,9 @@ lg - min-width: 90em
 
 .menu-btn:checked ~ .header-menu{
     max-height: 100vh;
+}
+.menu-btn:checked + .menu-icon .nav-icon{
+    background-color: transparent;
 }
 .header-menu:focus-within{
     max-height: 100vh;
@@ -387,6 +391,8 @@ lg - min-width: 90em
     position: relative;
     cursor: pointer;
     /* user-select: none; */
+    height: 30px;
+    padding: 0 2px;
 }
 
 .nav-icon{
@@ -405,14 +411,28 @@ lg - min-width: 90em
     height: 2px;
     width: 24px;
     position: absolute;
+    transition: transform ease-in .3s;
 }
 
 .nav-icon::after{
     transform: translateY(8px);
-    background-color: red;
+    
 }
 
 .nav-icon::before{
     transform: translateY(-8px);
-    background-color: blue;
+}
+
+.menu-btn:checked + .menu-icon .nav-icon::before{
+    transform: rotate(45deg);
+}
+
+.menu-btn:checked + .menu-icon .nav-icon::after{
+    transform: rotate(-45deg);
+}
+
+.menu-btn:focus-visible + .menu-icon{
+    /* o 'focus-visible' é para foco apenas quando for no teclado. */
+    outline: 1px solid black;
+
 }
