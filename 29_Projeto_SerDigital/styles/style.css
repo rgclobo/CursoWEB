@@ -36,16 +36,15 @@ body {
     list-style-type: none;
     padding: 0;
     text-align: right;
+}
 
-    /* display: none; */
-
-    
+.header-menu li{
+    padding: .25em 0;
 }
 
 .header-menu a {
     display: block;
-    padding: 2em 0;
-
+    padding: 1.75em 0;
 }
 
 a {
@@ -347,6 +346,35 @@ lg - min-width: 90em
 .header{
     display: flex;
     justify-content: space-between;
+}
+
+.header-menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: red;
+    transition: max-height .3s;
+    margin: 0;
+    padding: 0 1em;
+
+}
+
+.menu-btn:checked ~ .header-menu{
+    max-height: 100vh;
+}
+.header-menu:focus-within{
+    max-height: 100vh;
+}
+
+@media screen and (min-width: 46.25em){
+    .header-menu{
+        position: static;
+        max-height: initial;
+        background-color: initial;
+    }
 }
 
 .header nav{
