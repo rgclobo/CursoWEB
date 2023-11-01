@@ -75,6 +75,16 @@
             } */
         }
 
+        @keyframes largura{
+            0%{
+                width: 100px;
+            }
+
+            100%{
+                width: 400px;
+            }
+        }
+
         #anima{
             outline: 3px solid red;
             width: 400px;
@@ -117,19 +127,43 @@
         }
 
         #anima div:nth-child(3){
-            animation: anda 2s ease-in-out 3 alternate,
-            altura .5s linear 3 normal forwards;
+            /* animation: anda 2s ease-in-out 3 alternate,
+            altura .5s linear 3 normal forwards; */
         }
 
         #anima div:nth-child(4){
-            animation: anda 2s cubic-bezier(1,-0.01,0,1) 0s 3 alternate, altura .5s linear 3;
+            /* animation: anda 2s cubic-bezier(1,-0.01,0,1) 0s 3 alternate, altura .5s linear 3; */
         }
 
         #anima div:nth-child(5){
-            animation: anda 2s ease-in-out 3 alternate, altura2 2s ease-in 3;
+            /* animation: anda 2s ease-in-out 3 alternate, altura2 2s ease-in 3; */
 
             /* A propriedade 'will-change' melhora a performance da animação, quando ela tiver desempenho ruim. */
             will-change: height;
+        }
+
+        #anima div:nth-child(6){
+            animation: largura 5s;
+            /* A propriedade 'steps()' fala quantos steps vai ter a animação. 'jump-end' pula o ultimo passo*/
+            animation-timing-function: steps(5, jump-end);
+        }
+
+        #anima div:nth-child(7){
+            animation: largura 5s;
+            /* jump-start pula o primeir passo */
+            animation-timing-function: steps(5, jump-start);
+        }
+
+        #anima div:nth-child(8){
+            animation: largura 5s;
+            /* jump-none não pula nenhum */
+            animation-timing-function: steps(5, jump-none);
+        }
+
+        #anima div:nth-child(9){
+            animation: largura 5s;
+            /* jump-both pula o primeiro e o ultimo */
+            animation-timing-function: steps(5, jump-both);
         }
 
 
@@ -143,6 +177,10 @@
         <div>3</div>
         <div>4</div>
         <div>5</div>
+        <div>jump-end</div>
+        <div>jump-start</div>
+        <div>jump-none</div>
+        <div>Jump-both</div>
     </div>
 </body>
 </html>
