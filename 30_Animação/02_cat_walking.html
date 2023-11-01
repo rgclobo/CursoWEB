@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Walking</title>
+
+    <style>
+        .cat{
+            width: 400px;
+            height: 200px;
+            /* background-color: #ccc; */
+            background-image: url(./walking_sprite.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+
+            animation: andagato 1s steps(12) infinite;
+
+            transform: scaleX(-1);
+        }
+
+        @keyframes andagato{
+            from{
+                background-position: 0 0;
+            }
+
+            to{
+                background-position: 0 -2390px;
+            }
+        }
+
+        @keyframes sentagato{
+            from{
+                background-position: -400px 0;
+            }
+
+            to{
+                background-position: -400px -1200px;
+            }
+        }
+
+        .cat2{
+            width: 400px;
+            height: 200px;
+            /* background-color: #ccc; */
+            background-image: url(./walking_sprite.png);
+            background-position: -400px 0;
+            background-repeat: no-repeat;
+
+            animation: sentagato 3s steps(6) infinite;
+
+            /* transform: scaleX(-1); */
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="cat"></div>
+
+    <div class="cat2"></div>
+    
+</body>
+</html>
