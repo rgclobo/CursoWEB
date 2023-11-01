@@ -19,6 +19,62 @@
             }
         }
 
+        @keyframes altura{
+            0%{
+                height: 80px;
+            }
+            50%{
+                height: 120px;
+            }
+
+            100%{
+                height: 160px;
+            }
+
+        }
+
+        @keyframes gira{
+            0%{
+                transform: rotate(0deg);
+            }
+
+            25%{
+                transform: rotate(45deg);
+            }
+
+            50%{
+                transform: rotate(-45deg);
+            }
+
+            75%{
+                transform: rotate(-90deg);
+            }
+
+            100%{
+                transform: rotate(180deg);
+            }
+        }
+
+        @keyframes altura2{
+            /* É possivel resumir o codigo, colocando os valores que se repetem em quadros diferentes, na mesma linha. */
+            0%,
+            100%{
+                height: 80px;
+            }
+            20%,
+            80%{
+                height: 120px;
+            }
+
+            /* 80%{
+                height: 120px;
+            } */
+
+            /* 100%{
+                height: 80px;
+            } */
+        }
+
         #anima{
             outline: 3px solid red;
             width: 400px;
@@ -51,13 +107,32 @@
 
         #anima div:nth-child(2){
             animation: anda 2s linear 2s 3 alternate both running;
-            /* animation-fill-mode: both;
-            animation-play-state: running; */
+            /* animation-fill-mode: both; *\
+            /*  Executa ou pausa a animação */
+            /* animation-play-state: running; */
         }
 
         #anima div:nth-child(2):hover{
             animation-play-state: paused;
         }
+
+        #anima div:nth-child(3){
+            animation: anda 2s ease-in-out 3 alternate,
+            altura .5s linear 3 normal forwards;
+        }
+
+        #anima div:nth-child(4){
+            animation: anda 2s cubic-bezier(1,-0.01,0,1) 0s 3 alternate, altura .5s linear 3;
+        }
+
+        #anima div:nth-child(5){
+            animation: anda 2s ease-in-out 3 alternate, altura2 2s ease-in 3;
+
+            /* A propriedade 'will-change' melhora a performance da animação, quando ela tiver desempenho ruim. */
+            will-change: height;
+        }
+
+
 
     </style>
 </head>
@@ -65,6 +140,9 @@
     <div id="anima">
         <div>1</div>
         <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
     </div>
 </body>
 </html>
