@@ -67,6 +67,11 @@
             transform: perspective(600px) rotateY(45deg);
         }
 
+        #cena4 .plano{
+            /* Propriedade esconde a parte de trás do plano ao usar o rotate. Padrão: visible */
+            backface-visibility: hidden;
+        }
+
     </style>
 </head>
 <body>
