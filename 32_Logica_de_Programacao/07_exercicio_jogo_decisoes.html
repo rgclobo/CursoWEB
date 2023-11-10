@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Exercicio - Jogo de decisões</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Exercicios - Jogo de decisões</h1>
+
+    <script>
+        // parseInt( Math.random () * 2 )
+
+        let palpite1 = prompt("Jogador 1: Digite um número");
+        palpite1 = parseInt(palpite1);
+
+        let palpite2 = prompt("Jogador 2: Digite um número");
+        palpite2 = parseInt(palpite2);
+
+        if (palpite1 === palpite2){ 
+            alert("Empate!!");
+        }
+        else{ 
+            let palpitecpu = parseInt( Math.random () * 2 );
+
+            alert("O computador sorteou " + palpitecpu + 
+                (palpitecpu === 0 ? " Ganha quem escolheu o NÚMERO MENOR!" : " Ganha quem escolheu o NÚMERO MAIOR!"));
+
+            if (palpitecpu === 0){ // Ganha quem escolheu menor numero
+                if(palpite1 < palpite2){
+                    // Palpite 1 Ganha
+                    alert("Jogador 1 ganhou, pois tem o MENOR NÚMERO: " + palpite1 + " < " + palpite2);
+                } 
+                else{
+                    // Palpite 2 Ganha
+                    alert("Jogador 2 ganhou, pois tem o MENOR NÚMERO: " + palpite1 + " < " + palpite2);
+                }
+            }
+            else{ //Ganha quem escolher o maior numero
+                if(palpite1 > palpite2){
+                    // Palpite 1 Ganha
+                    alert("Jogador 1 ganhou, pois tem o MAIOR NÚMERO: " + palpite1 + " > " + palpite2);
+                } 
+                else{
+                    // Palpite 2 Ganha
+                    alert("Jogador 2 ganhou, pois tem o MAIOR NÚMERO: " + palpite1 + " > " + palpite2);
+                }
+            }
+        }
+
+    </script>
+</body>
+   
+</html>
