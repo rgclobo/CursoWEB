@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Operadores Lógicos</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Operadores Lógicos</h1>
+
+    <script>
+        let n1 = prompt("Digite a nota 1 do aluno:");
+        n1 = parseFloat(n1);
+
+        let n2 = prompt("Digite a nota 2 do aluno:");
+        n2 = parseFloat(n2);
+
+        let mediaaluno = (n1 + n2) / 2;
+
+        if( mediaaluno > 5 && n1 > 0 && n2 > 0){
+            alert("O aluno foi aprovado! A média foi " + mediaaluno + " !")
+        }
+        else{
+            alert("O aluno foi reprovado!")
+        }
+    </script>
+</body>
+   
+</html>
