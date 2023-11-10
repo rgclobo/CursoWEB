@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Controle de decisões</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Controle de decisões</h1>
+
+    <script>
+        // Pedir para o user digitar dois números e mostrar uma mensagem, mostrando se a média foi aprovada ou reprovada
+        // > 5 aprovado
+        // <= 5 reprovado
+
+        let n1 = prompt("Digite um número");
+        n1 = parseFloat(n1);
+
+        let n2 = prompt("Digite outro número");
+        n2 = parseFloat(n2);
+
+        let media = (n1 + n2) / 2;
+
+        // if(media > 5){
+        //     alert("Parabéns, você foi aprovado!")
+        // } else {
+        //     alert("Desculpe, mas você não foi aprovado! Se esforce mais!")
+        // }
+
+        // Operador ternário:
+        // Condições ? executa se for verdadeiro : executa se falso
+        media > 5 ? alert("Parabéns, você foi aprovado!") : alert("Desculpe, mas você não foi aprovado! Se esforce mais!")
+    </script>
+</body>
+   
+</html>
