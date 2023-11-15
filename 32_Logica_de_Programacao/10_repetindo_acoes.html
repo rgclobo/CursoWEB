@@ -23,16 +23,29 @@
 
             indice ++; // ou indece = indece +1
         }
-            document.write("Terminou a loucura!!!<br>");
+        document.write("Terminou a loucura apenas while!!!<br>");
 
-    // Loop com 'for'
+        do{
 
-    for(let i = 1 ; i <= 10 ; i++){
+            let resultado = numero * indice;
 
-        let resultado = numero * i;
+            document.write( numero + " x " + indice + " = " + resultado + "<br>");
 
-        document.write( numero + " x " + i + " = " + resultado + "<br>");
-    }
+            indice ++; // ou indece = indece +1
+        } while(indice <= 10)
+
+        document.write("Terminou a loucura com do while!!!<br>");
+
+        // Loop com 'for'
+
+        for(let i = 1 ; i <= 10 ; i++){
+
+            let resultado = numero * i;
+
+            document.write( numero + " x " + i + " = " + resultado + "<br>");
+        }
+
+        document.write("Terminou a loucura com for!!!<br>");
     </script>
 </body>
    
