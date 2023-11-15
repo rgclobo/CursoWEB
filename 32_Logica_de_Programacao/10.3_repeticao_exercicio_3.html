@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Repetindo Açoes - Exercicio 3</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Repetindo Açoes - Exercicio 3 </h1>
+
+    <script>
+        // Loop com 'for' E mostrar apenas os anos bissextos! Não multiplos de 100!
+        // Mas multiplos de 400
+
+        for(let i = 1004 ; i <= 2017 ; i += 4){
+
+        //     if(i % 100 !== 0 ){
+
+        //             document.write( "Ano: " + i + " ! <br>");
+
+        // os multiplos de 400
+        //     }
+        //     else if( i % 400 === 0){
+        //             document.write( "Ano: " + i + " ! <br>");
+        //     }
+        // }
+
+        // SIMPLIFICADO
+
+        // os não multiplos de 100 ou os multiplos de 400
+        if(i % 100 !== 0 || i % 400 === 0){
+            document.write( "Ano: " + i + " ! <br>");
+        }
+
+
+        
+
+        document.write("Terminou !! <br>");
+    </script>
+</body>
+   
+</html>
