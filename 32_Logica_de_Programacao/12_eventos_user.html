@@ -19,14 +19,28 @@
         // Mostrar a tabuada de 1 a 1000
         // Dar a possibilidade de mudar o número, limpar tudo e mostrar outra.
 
+        let output = document.querySelector('#output');
 
         function mostrarTabuada(){
-            let output = document.querySelector('#output');
+            // Perguntar o número para o user
+            let n = prompt ("Digite um número para saber a Tabuada");
 
+            // Converter o número
+            n = parseFloat(n);
+
+            // Variavel mensagem para armazenar
             let mensagem = "";
-            for(let i = 0; i< 1001; i++){
-                mensagem += "i: " + i + "<br>";
+
+            // Criar uma variavel que servira de indice
+            // Enquanto o indice <= a 1000
+                // Concatena na variavel 'mensagem'
+            for(let i = 1; i <= 1000; i++){
+                mensagem += n + " * " + i + " = " + (n * i) + "<br>";
             }
+
+            // Enquanto o indice <= a 1000
+                // Concatena na variavel 'mensagem'
+            // No final mostrar mensagem no output
 
             output.innerHTML = mensagem;
         }
