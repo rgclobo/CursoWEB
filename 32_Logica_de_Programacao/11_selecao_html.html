@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Seleção HTML</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Seleção HTML</h1>
+
+        <div id="output"></div>
+
+    <script>
+            // Problema: 
+        // Pedir para  user digitar um número
+        // Mostrar a tabuada de 1 a 1000
+        // Dar a possibilidade de mudar o número
+        
+        let output = document.querySelector('#output');
+
+        let mensagem = "";
+        for(let i = 0; i< 1001; i++){
+            mensagem += "i: " + i + "<br>";
+        }
+
+
+        output.innerHTML = mensagem;
+
+    </script>
+</body>
+   
+</html>
