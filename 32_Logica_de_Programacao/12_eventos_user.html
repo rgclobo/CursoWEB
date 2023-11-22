@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Eventos usuário</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Eventos usuário</h1>
+
+        <button onclick="mostrarTabuada()">Criar Tabuada</button>
+        <button onclick="limparTabuada()">Limpar Tabuada</button>
+        <div id="output"></div>
+
+
+    <script>
+        // Problema: 
+        // Pedir para  user digitar um número
+        // Mostrar a tabuada de 1 a 1000
+        // Dar a possibilidade de mudar o número, limpar tudo e mostrar outra.
+
+
+        function mostrarTabuada(){
+            let output = document.querySelector('#output');
+
+            let mensagem = "";
+            for(let i = 0; i< 1001; i++){
+                mensagem += "i: " + i + "<br>";
+            }
+
+            output.innerHTML = mensagem;
+        }
+
+        function limparTabuada(){
+            output.innerHTML = "";
+        }
+        
+        
+
+    </script>
+</body>
+   
+</html>
