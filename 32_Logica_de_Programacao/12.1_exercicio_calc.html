@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Funções - Exercicio Calculadora</title>
+</head>
+<body onload="primeiroNumero()">
+        <h1>Lógica de Programação - Funções - Exercicio Calculadora</h1>
+
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="multiplicar()">*</button>
+        <button onclick="dividir()">/</button>
+        <button onclick="limpar()">AC</button>
+
+        <div id="output"></div>
+    <script>
+        // Armazena o numero 1
+        let number1 = 0;
+         // Variavel numero 2
+        let number2 = 0;
+        // Variavel resultado
+        let resultado = 0;
+        // Variavel output
+        let output = document.querySelector('#output');
+
+        function primeiroNumero(){
+            number1 = prompt ("Digite um número:");
+            number1 = parseFloat(number1);
+            // Imprime o número 1
+            output.innerHTML = number1;
+        }
+        
+        // Função que armazena numero 2
+        function outroNumero(){
+            number2 = prompt ("Digite outro número:");
+            number2 = parseFloat(number2);
+        }
+
+        // Função de soma
+        function somar(){
+            outroNumero();
+            resultado = number1 + number2;
+            number1 = resultado;
+            imprimir();
+        }
+
+        // Função de subtração
+        function subtrair(){
+            outroNumero();
+            resultado = number1 - number2;
+            number1 = resultado;
+            imprimir();
+        }
+
+        // Função de multiplicação
+        function multiplicar(){
+            outroNumero();
+            resultado = number1 * number2;
+            number1 = resultado;
+            imprimir();
+        }
+
+        // Função de divisão
+        function dividir(){
+            outroNumero();
+            resultado = number1 / number2;
+            number1 = resultado;
+            imprimir();
+        }
+
+        function limpar(){
+            output.innerHTML = "";
+            setTimeout(primeiroNumero, 1000);
+        }
+
+        // Função que imprime o resultado
+        function imprimir(){
+            output.innerHTML = resultado;
+        }
+
+
+    </script>
+</body>
+   
+</html>
