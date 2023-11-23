@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Funções - Exercicio Solo</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Funções - Exercicio Solo</h1>
+
+        <button onclick="tirarsaldo()">Saldo</button>
+        <button onclick="sacar()">Saque</button>
+        <button onclick="depositar()">Depósito</button>
+        <div id="output"></div>
+
+
+    <script>
+        // Criar um sistema básico de banco
+        // Poder tirar o saldo - Já começa com R$50,00
+        // Poder depositar
+        // Poder sacar
+
+        // Variavel de saldo
+        let saldo = 50;
+        saldo = parseFloat(saldo);
+
+        // Variavel de saque
+        let saque = 0;
+
+        // Variavel de deposito
+        let deposito = 0;
+
+        // Variavel output
+        let output = document.querySelector('#output');
+
+        
+        // Perguntar ao usuario se ele quer ver o saldo ou voltar
+
+        
+
+        // Função de Saldo
+        function tirarsaldo(){
+            // Perguntar ao usuario se ele quer ver o saldo ou voltar
+            let option = prompt("Olá, seja bem vindo. Digite 1 para tirar seu saldo ou 0 para sair.")
+            option = parseInt(option);
+            // Mostrar o saldo e encerrar
+            switch(option){
+                case 0: 
+                    break;
+                case 1:
+                    imprimir();
+                    break;
+                default:
+                    alert("Opção incorreta! Digite 1 para tirar seu saldo ou 0 para sair!");
+                    tirarsaldo();
+                    break;
+                }
+        }
+
+        // Função de saque
+        function sacar(){
+            // Perguntar ao usuário se ele quer sacar, sair ou ver o saldo antes de sacar.
+            let option = prompt("Olá, seja bem vindo. Digite 1 para sacar seu saldo, 2 para ver o saldo antes de sacar ou 0 para sair.")
+            option = parseInt(option);
+            // Sacar, mostrar saldo ou sair
+            switch(option){
+                // Sair
+                case 0:
+                    break;
+                // Saque
+                case 1:
+                    saque = prompt("Quanto você gostaria de sacar?");
+                    saque = parseFloat(saque);
+                        if( saque === 0){
+                            alert ("Você precisa sacar um valor maior que R$0.00!");
+                        }
+
+                        else if( saque <= saldo){
+                            saldo = saldo - saque;
+                            alert ("Muito bem seu saque de R$" + saque + ", foi realizado com sucesso!");
+                            imprimir();
+                        }
+                        else{
+                            alert ("Desculpe, mas você não tem saldo sufiente para essa operação!");
+                            imprimir();
+                        }
+                    break;
+                // Mostrar Saldo
+                case 2:
+                    imprimir();
+                    break;
+                default:
+                    alert("Opção incorreta! Digite 1 para sacar seu saldo, 2 para ver o saldo antes de sacar ou 0 para sair.");
+                    sacar();
+                    break;
+            }
+        }
+
+        // Função de deposito
+        function depositar(){
+            // Perguntar ao Usuário se ele quer depositar, ver o saldo antes de depositar ou sair.
+            let option = prompt("Olá, seja bem vindo. Digite 1 para depositar, 2 para ver o saldo antes de depositar ou 0 para sair.")
+            option = parseInt(option);
+            switch(option){
+                // Sair
+                case 0:
+                    break;
+                // depositar
+                case 1:
+                    deposito = prompt("Quanto você gostaria de depositar?");
+                    deposito = parseFloat(deposito);
+                        if( deposito > 0){
+                            saldo = saldo + deposito;
+                            alert ("Muito bem, seu depósito de R$" + deposito + ", foi realizado com sucesso!");
+                            imprimir();
+                        }
+                        else{
+                            alert ("Você precisa depositar um valor maior que R$0.00!");
+                            depositar();
+                        }
+                    break;
+                // Mostrar Saldo
+                case 2:
+                    imprimir();
+                    break;
+                default:
+                    alert("Opção incorreta! Digite 1 para depositar, 2 para ver o saldo antes de depositar ou 0 para sair.");
+                    depositar();
+                    break;
+            }
+
+        }
+
+
+        // Função que imprime
+        function imprimir(){
+            output.innerHTML = "Seu saldo é de R$" + saldo; + "!";
+        }
+
+
+        
+    </script>
+</body>
+   
+</html>
