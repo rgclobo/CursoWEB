@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Funções - Exercicio Calculadora</title>
+</head>
+<body onload="primeiroNumero()">
+        <h1>Lógica de Programação - Funções - Exercicio Calculadora</h1>
+
+        <button onclick="calc('+')">+</button>
+        <button onclick="calc('-')">-</button>
+        <button onclick="calc('*')">*</button>
+        <button onclick="calc('/')">/</button>
+        <button onclick="limpar()">AC</button>
+
+        <div id="output"></div>
+    <script>
+        // Armazena o numero 1
+        let number1 = 0;
+        // Variavel output
+        let output = document.querySelector('#output');
+
+        function primeiroNumero(){
+            number1 = prompt ("Digite um número:");
+            number1 = parseFloat(number1);
+            // Imprime o número 1
+            imprimir(number1);
+        }
+        
+        // Função que armazena numero 2
+        function outroNumero(){
+            let number2 = prompt ("Digite outro número:");
+            number2 = parseFloat(number2);
+
+            return number2;
+        }
+
+        // Função de calcular
+        function calc(operacao){
+            let number2 = outroNumero();
+            let resultado = 0;
+            switch(operacao){
+                case '+':
+                resultado = number1 + number2;
+                break;
+                case '-':
+                resultado = number1 - number2;
+                break;
+                case '*':
+                resultado = number1 * number2;
+                break;
+                case '/':
+                resultado = number1 / number2;
+                break;
+            }
+            number1 = resultado;
+            imprimir(number1);
+        }
+        function limpar(){
+            output.innerHTML = "";
+            setTimeout(primeiroNumero, 100);
+        }
+        // Função que imprime o resultado
+        function imprimir(msg){
+            output.innerHTML = msg;
+        }
+    </script>
+</body>
+   
+</html>
