@@ -47,18 +47,12 @@
                 case '+':
                 resultado = number1 + number2;
                 break;
-            }
-            switch(operacao){
                 case '-':
                 resultado = number1 - number2;
                 break;
-            }
-            switch(operacao){
                 case '*':
                 resultado = number1 * number2;
                 break;
-            }
-            switch(operacao){
                 case '/':
                 resultado = number1 / number2;
                 break;
@@ -66,18 +60,14 @@
             number1 = resultado;
             imprimir();
         }
-
         function limpar(){
             output.innerHTML = "";
             setTimeout(primeiroNumero, 1000);
         }
-
         // Função que imprime o resultado
         function imprimir(){
             output.innerHTML = resultado;
         }
-
-
     </script>
 </body>
    
