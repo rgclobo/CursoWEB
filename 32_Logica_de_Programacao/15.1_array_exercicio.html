@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Array</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Array exercicio</h1>
+
+        <div id="output"></div>
+
+    <script>
+
+        /*
+        0 - domingo
+        1 - segunda
+        ...
+        7- sabado
+
+        */
+
+        const dias = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sabado'];
+
+        let hoje = new Date(); // retorna data completa da maquina do usuario ***Não é confiavel***
+        let diaSemana = hoje.getDay(); // retorna o dia da semana
+
+
+        alert("Bem vindo, hoje é " + dias[diaSemana] + " !");
+
+        // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date
+        
+
+
+    </script>
+</body>
+   
+</html>
