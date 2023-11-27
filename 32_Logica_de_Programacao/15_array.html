@@ -8,6 +8,7 @@
 <body>
         <h1>Lógica de Programação - Array</h1>
 
+        <div id="output"></div>
 
     <script>
        /*  // Criando Array
@@ -36,11 +37,17 @@
 
         // Melhor maneira de criar arryas
         // const produtos = [];
+
+        let output = document.querySelector("#output");
+        
+        let msg = "";
         const produtos = ["Computador", "Calculadora", "Tesoura"];
 
         for (let i = 0; i < produtos.length; i++){
-            alert("Produto " + i + ": " + produtos[i]);
+            msg += "Produto " + (i + 1) + ": " + produtos[i] + "<br>";
         }
+
+        output.innerHTML = msg;
 
         // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
 
