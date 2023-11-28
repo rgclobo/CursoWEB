@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Objetos</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Objetos</h1>
+
+    <script>
+
+        const produto1 = {};
+        produto1.nome = "Caneta";
+        produto1.qtd = 4;
+        produto1.preco = 9.5;
+
+        const produto2 = {nome: "Lápis", qtd: 5, preco: 6.5}
+
+        const produto3 = {nome: "borracha"};
+        // Criando dinamicamente
+        produto3["qtd"] = 3;
+        produto3.preco = 8;
+        // Substitui o valor da propriedade preço
+        produto3.preco = 9;
+
+        // Percorre entre as propriedades de um objeto
+        for(let prop in produto1){
+            // console.log(prop);
+
+            console.log(prop + ": " + produto1[prop]);
+        }
+
+
+        
+    </script>
+</body>
+   
+</html>
