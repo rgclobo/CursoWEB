@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Array de objetos</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Array de objetos</h1>
+
+        <div id="output"></div>
+
+    <script>
+
+        let mensagem = "";
+        let output = document.querySelector('#output');
+
+        const produto1 = new Object();
+            produto1.nome = "Caneta";
+            produto1.preco = 6;
+            produto1.qtd = 10;
+
+        const produto2 = {nome: "Lápis", preco: 4, qtd: 10};
+
+        // Array contendo objetos
+        const produtos = [produto1, produto2, {nome: "Borracha", preco: 3, qtd: 10}];
+
+        
+
+        // Percorrendo o array
+
+        for(let i = 0 ; i < produtos.length ; i++){
+            // Pega o produto Atual
+            let produtoAtual = produtos[i];
+            // Percorre o objeto
+            for(let prop in produtoAtual){
+                mensagem += prop + ": " + produtoAtual[prop] + " - ";
+            }
+
+            mensagem += "<br>";
+        }
+
+        output.innerHTML =  mensagem;
+        
+    </script>
+</body>
+   
+</html>
