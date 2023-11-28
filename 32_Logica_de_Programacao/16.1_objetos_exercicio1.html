@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Objetos</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Objetos</h1>
+
+        <div id="output"></div>
+
+    <script>
+
+        const produto1 = {};
+        produto1.nome = "Caneta";
+        produto1.qtd = 10;
+        produto1.preco = 9.5;
+
+        produto1.mostrar = function(){
+            // Percorre entre as propriedades de um objeto
+            // this no caso é proprio objeto
+            for(let prop in this){
+
+                // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/typeof
+                // Testa se não é a própria função
+                if(typeof this[prop] !== "function"){
+                    console.log(prop + ": " + this[prop]);
+                }
+            }
+        }
+
+        produto1.mostrar();
+        
+        // Função comprando item
+        produto1.comprar = function(q){
+            if(!q){
+                q = 1;
+            }
+            this.qtd -= q;
+
+            this.mostrar();
+        }
+
+    </script>
+</body>
+   
+</html>
