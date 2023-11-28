@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Array</title>
+</head>
+<body>
+        <h1>Lógica de Programação - Array Exercicio</h1>
+
+        <div id="output"></div>
+
+    <script>
+        // Somar todos os numeros pares do array e mostrar na tela
+
+        // Criando Array
+        const arr = [25, 30, 45, 28, 0, 12, 78, 64];
+        const output = document.querySelector('#output');
+        // Variavel resultado
+        let resultado = 0;
+
+        for (let i = 0; i < arr.length; i++){
+            // Pega o numero atual
+            let numeroAtual = arr[i];
+            // Verifica os pares
+            if( numeroAtual % 2 === 0);{
+                // Soma o valor atual
+                resultado += numeroAtual;
+            }
+        }
+        // Imprime o resultado na div
+        output.innerHTML = resultado;
+
+
+
+        
+    </script>
+</body>
+   
+</html>
