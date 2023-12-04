@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Funções IFEE</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Funções IFEE</h1>
+
+    <div id="output"></div>
+</body>
+
+    <script>
+       //IFEE - Função auto-invocavel - Cria um bloco de código com escopo único
+       (function(){
+        let isValid = true;
+        let nome = "Fulano";
+        console.log('isValid: ' , isValid, " - Nome: " , nome);
+
+        function somar(n1, n2){
+            return n1 + n2;
+        }
+
+        console.log('Resultado: ', somar(10, 15));
+        console.log('--------------');
+
+        // Mas podemos pegar elemntos do HTML para manipular
+        const divOutput = document.querySelector('#output');
+        divOutput.innerText = 'Resultado: ' + somar(10, 15);
+
+       })();
+
+
+        // aqui é outro bloco com escopo diferente    
+       ( function(){
+            let nome = 'Sicrano';
+            let isValid = false;
+            console.log('isValid: ' , isValid, " - Nome: " , nome);
+
+            console.log('--------------------')
+
+            // da erro, pois não existe metodo somar nesse escopo
+            console.log('Resultado: ', somar(10, 15));
+        }
+       )()
+
+       // da erro, pois não existe variavel 'isValid' no escopo global!
+       console.log(isValid);
+    </script>
+</html>
