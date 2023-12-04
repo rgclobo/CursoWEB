@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Funções</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Funções</h1>
+</body>
+
+    <script>
+        // Forma literal
+        function somar(n1, n2){
+            // Corpo da funçao
+            return n1 + n2;
+        }
+
+        let soma = somar(10, 20);
+        console.log('Resultado:, ' + soma);
+
+        somar.outraPropriedade = ("Uma coisa qualquer ...")
+        console.log(somar.outraPropriedade);
+
+        const teste = function(msg){
+            console.log('Teste: ' + msg);
+        };
+
+        teste('Olá');
+
+        // Função pode ser passada como parametro tb
+
+        function executaFuncao(f, msg){
+            f(msg);
+        }
+
+        executaFuncao(teste, '12345');
+
+        // Auto execução da função
+        ( function(){
+            console.log('Eu mesmo vou chamar a mim mesmo!');
+        } )();
+
+        console.log("--------------");
+
+        // Escopo global
+        let x = 0;
+        let y;
+
+        function mostraX(){
+            let x = 10; //Escopo local
+            let y = 20;
+            console.log("Mostra x dentro: " , x);
+            console.log("Mostra y dentro: " , y);
+        }
+        mostraX();
+
+        console.log("Mostra x fora: " , x);
+        console.log("Mostra y fora: " , y);
+
+
+
+
+    </script>
+</html>
