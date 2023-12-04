@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Funções Arguments</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Funções Arguments</h1>
+    <div id="output"></div>
+</body>
+
+    <script>
+        const divOutput = document.querySelector('#output');
+        function somar(){
+            let htmlResult = "";
+            let soma = 0;
+            let i = 0;
+
+            htmlResult += "Arguments: " + arguments + "<br>"; // Array de parametros
+            htmlResult += "Arguments: " + arguments.length + "<br>"; // Comprimento do array
+
+            for(let i = 0; i < arguments.length ; i++){
+                soma += arguments[i];
+            }
+
+            htmlResult += "Resultado de soma: " + soma + "<br>";
+            
+            divOutput.innerHTML = htmlResult;
+        }
+        somar(1, 2, 5);
+    </script>
+</html>

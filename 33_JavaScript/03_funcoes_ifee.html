@@ -13,21 +13,21 @@
 
     <script>
        //IFEE - Função auto-invocavel - Cria um bloco de código com escopo único
-       (function(){
-        let isValid = true;
-        let nome = "Fulano";
-        console.log('isValid: ' , isValid, " - Nome: " , nome);
+       ( function(){
+            let isValid = true;
+            let nome = "Fulano";
+            console.log('isValid: ' , isValid, " - Nome: " , nome);
 
-        function somar(n1, n2){
-            return n1 + n2;
-        }
+            function somar(n1, n2){
+                return n1 + n2;
+            }
 
-        console.log('Resultado: ', somar(10, 15));
-        console.log('--------------');
+            console.log('Resultado: ', somar(10, 15));
+            console.log('--------------');
 
-        // Mas podemos pegar elemntos do HTML para manipular
-        const divOutput = document.querySelector('#output');
-        divOutput.innerText = 'Resultado: ' + somar(10, 15);
+            // Mas podemos pegar elemntos do HTML para manipular
+            const divOutput = document.querySelector('#output');
+            divOutput.innerText = 'Resultado: ' + somar(10, 15);
 
        })();
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - </title>
+</head>
+<body>
+    <h1>Curso JavaScript - </h1>
+    <div id="output"></div>
+</body>
+
+    <script>
+        const divOutput = document.querySelector('#output');
+
+        function media(){
+            let htmlResult = "";
+            let soma = 0;
+            let i = 0;
+
+            for(; i < arguments.length ; i++){
+                soma += arguments[i] / 2;
+            }
+
+            let media = soma / i;
+
+            htmlResult += "A média é: " + media;
+            divOutput.innerHTML += htmlResult;
+        }
+        
+        media(5, 5, 5);
+    </script>
+</html>
