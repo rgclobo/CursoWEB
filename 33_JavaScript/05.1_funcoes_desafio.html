@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Funções Desafio</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Funções Desafio</h1>
+    <div id="output"></div>
+</body>
+
+    <script>
+        const divOutput = document.querySelector('#output');
+        let altura = 0;
+        let peso = 0;
+        let imcResult = "";
+
+        function imc(){
+
+            altura = prompt("Digite sua altura!");
+            altura = parseFloat(altura);
+
+            peso = prompt("Digite seu peso!");
+            peso = parseFloat(peso);
+
+            let imc = peso / ((altura / 100) ** 2);
+            
+            imcResult += "Seu IMC é de: " + imc.toFixed(2);
+            divOutput.innerHTML = imcResult;
+        }
+        imc();
+
+
+
+
+
+
+
+
+
+        divOutput.innerHTML = imcResult;
+        
+    </script>
+</html>
