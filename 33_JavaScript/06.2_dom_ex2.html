@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - DOM - Aula 1</title>
+</head>
+    <body>
+        <h1>Curso JavaScript - DOM - Aula 1</h1>
+
+        <div id="msg"></div>
+    </body>
+
+    <script>
+
+        // A propriedade innerHTML, interpreta as tags html e o conteudo.
+
+
+        
+        (function(){
+            let nome = prompt("Digite seu nome!");
+            document.querySelector("#msg").innerHTML = "Bem vindo <b>" + nome + "</b>";
+        })();
+
+    </script>
+</html>
