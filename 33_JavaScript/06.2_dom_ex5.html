@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - DOM - Aula 1</title>
+</head>
+    <body>
+        <h1>Curso JavaScript - DOM - Aula 1</h1>
+
+        <input type="text" id="txtNome" placeholder="Digite o seu nome:">
+
+    </body>
+
+    <script>
+        let txt = document.querySelector('txtNome');
+        const nome = "Ricardo";
+        const sobrenome = "Lobo";
+
+        document.querySelector("#txtNome").value = nome + " " + sobrenome;
+        document.querySelector("#txtNome").disabled = true;
+    </script>
+</html>
