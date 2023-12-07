@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - DOM - Aula 1</title>
+</head>
+    <body>
+        <h1>Curso JavaScript - DOM - Aula 1</h1>
+
+        <input type="text" id="txtNome" placeholder="Digite o seu nome:">
+        <button id="btn">Enviar</button>
+
+        <div id="msg"></div>
+    </body>
+
+    <script>
+        // Sempre para acessar dados de formulários, vai se utilizar a propriedade "value"
+
+        (function(){
+        const divMsg  = document.querySelector("#msg");
+        const txtNome  = document.querySelector("#txtNome");
+        const  btnMostra = document.querySelector("#txtNome");
+
+        //Adiciona os eventos
+        txtNome.addEventListener("input", mostra);
+        btnMostra.addEventListener("click", mostra);
+
+        function mostra(event){
+            // tipo do evento
+            console.log("Type: ", event.type);
+            // que disparou o evento
+            console.log("Type: ", event.target);
+
+
+                // para o HTML
+            divMsg.innerHTML = "Bem vindo, <b>" + txtNome.value + "</br>"
+        }
+        })();
+    </script>
+</html>
