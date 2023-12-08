@@ -86,12 +86,12 @@
             (function(){
                 'use strict'
                 const trs = document.querySelectorAll(".js-tabela tbody .aluno");
-				debugger
+				//debugger
 				for(let i = 0; i < trs.length; i++){
-					debugger
+					//debugger
 					const linhaAluno = trs[i];
 
-					console.log(linhaAluno);
+					//console.log(linhaAluno);
 
 					const tds = linhaAluno.querySelectorAll("td");
 
@@ -101,7 +101,7 @@
 					let qtd = 0;
 
 					for(let j = 0; j < tds.length; j++){
-						debugger
+						//debugger
 						const colunaAluno = tds[j];
 						// console.log(colunaAluno);
 						const nota = parseFloat(colunaAluno.textContent);

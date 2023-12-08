@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - </title>
+</head>
+<body>
+    <h1>Curso JavaScript - </h1>
+    <div id="output"></div>
+</body>
+
+    <script>
+        const output = document.querySelector("#output");
+
+        /* function mostraHora(){
+            const agora = new Date();
+            output.textContent =  agora.getHours() + ":" + agora.getMinutes() + ":" + agora.getSeconds();
+        }
+
+        //função, tempo em milisegundos
+        setInterval(mostraHora, 1000); */
+
+        setInterval(function(){
+            const agora = new Date();
+            output.textContent =  agora.getHours() + ":" + agora.getMinutes() + ":" + agora.getSeconds();
+        },1000);
+
+        
+    </script>
+</html>
