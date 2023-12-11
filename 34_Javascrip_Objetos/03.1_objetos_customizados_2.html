@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Objetos Customizados</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Objetos Customizados</h1>
+    <div id="output"></div>
+</body>
+
+    <script>
+        const output = document.querySelector("#output");
+
+        function Calculadora(){
+
+            this.v1 = 0;
+            this.v2 = 0;
+
+            let result = 0;
+
+            this.getResult = function(){
+                return result;
+            }
+
+            this.sum = function(){
+                result = this.v1 + this.v2;
+            }
+
+            this.subtraction = function(){
+                result = this.v1 - this.v2;
+            }
+        }
+
+        const calc = new Calculadora();
+
+        calc.v1 = 5;
+        calc.v2 = 3;
+
+        calc.sum();
+
+        let res = calc.getResult();
+    
+        output.innerHTML += res + "<br>"
+        
+    </script>
+</html>
