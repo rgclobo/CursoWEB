@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Objetos Customizados</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Objetos Customizados</h1>
+    <div id="output"></div>
+</body>
+
+    <script>
+        const output = document.querySelector("#output");
+
+        function Caneta(newColor, newPrice){
+            // propriedade "escondida", (escopo dentro da funcao/objeto caneta)
+            let color = newColor || '';
+            // propriedade "exposta" (escopo acessivel ex: caneta1.price)
+            this.price = newPrice || 0;
+
+            this.setColor = function(newColor){
+
+                if(newColor === 'red' || newColor === 'black' || newColor === 'blue' || newColor === 'green'){
+                    color = newColor;
+                    return color;
+                }
+
+                return false;
+            }
+
+            this.getColor = function(){
+                return color;
+            }
+        }
+
+        let caneta1 = new Caneta();
+        caneta1.setColor('Blue');
+        caneta1.price = 10;
+
+        let caneta2 = new Caneta('Green', 10);
+
+
+        //Setando uma cor válida
+        let resp1 = caneta2.setColor('red');
+
+        // retornou a cor, então NÃO chama o alert
+        if(!resp1){
+            alert("Cor inválida! 1");
+        }
+
+         //Setando uma cor INválida
+         let resp2 = caneta2.setColor('purple');
+
+        // retornou false, então CHAMA o alert
+        if(!resp2){
+            alert("Cor inválida! 2");
+        }
+
+
+        output.innerHTML += caneta1.getColor() + "<br>"
+        output.innerHTML += caneta2.getColor() + "<br>"
+        
+    </script>
+</html>
