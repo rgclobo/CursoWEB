@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Eventos</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Eventos</h1>
+    <div id="output"></div>
+
+    <button id="btn1" onclick="clicar()">Clique 1</button>
+    <button id="btn2">Clique 2</button>
+    <button id="btn3">Clique 3</button>
+</body>
+
+    <script>
+        const output = document.querySelector("#output");
+        const btn2 = document.getElementById("btn2");
+        const btn3 = document.getElementById("btn3");
+
+        btn3.addEventListener("click", clicar);
+
+        btn2.onclick = clicou;
+
+        function clicar(){
+            alert("Clicou no botão!");
+        }
+
+        function clicou(){
+            alert("Clicou no botão 2!");
+        }
+
+
+        
+    </script>
+</html>

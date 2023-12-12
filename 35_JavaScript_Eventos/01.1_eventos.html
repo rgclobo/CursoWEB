@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Eventos</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Eventos</h1>
+    <button id="btn1" onclick="clicar(event)" onmousedown="clicar(event)">Clique 1</button>
+    <button id="btn2">Clique 2</button>
+    <button id="btn3">Clique 3</button>
+
+    <div id="output"></div>
+</body>
+
+    <script>
+        const output = document.querySelector("#output");
+        const btn2 = document.getElementById("btn2");
+        btn2.onclick = clicar;
+        btn2.onmousedown = clicar;
+
+
+        const btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click", clicar);
+        btn3.addEventListener("mousedown", clicar);
+
+        
+
+
+
+        function clicar(event){
+            //Pega o event handler (quem disparou o evento)
+            const target = event.target;
+
+            // Pega o tipo do evento (click)
+            const type = event.type;
+
+            output.innerHTML += type + ": " + target.id + "<br>"
+        };
+
+
+        
+    </script>
+</html>
