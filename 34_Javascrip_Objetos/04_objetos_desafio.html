@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Objetos Desafio</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Objetos Desafio</h1>
+    <div id="output"></div>
+</body>
+
+    <script>        const output = document.querySelector("#output");
+
+        function Pessoa(nome, sobrenome){
+            this.nome = nome;
+            this.sobrenome = sobrenome;
+        };
+
+        const pessoas = [new Pessoa("João", "Silva"), new Pessoa("Maria", "Lourdes"), new Pessoa("Antonio", "Martins") ];
+
+        let conteudo = "";
+
+        for(let i = 0; i < pessoas.length; i++){
+
+            conteudo += pessoas[i].nome + " " + pessoas[i].sobrenome + "<br>"
+        }
+        
+        output.innerHTML = conteudo;
+    </script>
+</html>
