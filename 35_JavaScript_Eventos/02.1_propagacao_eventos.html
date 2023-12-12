@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Eventos</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Eventos</h1>
+
+    <div id="divRaiz">
+        <div id="divDoMeio">
+            <div id="divDeDentro">
+                <button id="btn">Botão</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="output"></div>
+
+
+    <script>
+        const output = document.querySelector("#output");
+
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", clicou);
+
+        const divRaiz = document.getElementById("divRaiz");
+        const divDoMeio = document.getElementById("divDoMeio");
+        const divDeDentro = document.getElementById("divDeDentro");
+
+       divRaiz.addEventListener("click", clicou/*, true */);
+       divDoMeio.addEventListener("click", clicou/*, true */);
+
+       // Terceiro parametro é um bolean(capture) (true e false(padrão), colando em true, inverte a ordem de captura (bubble de fora para dentro))
+       divDeDentro.addEventListener("click", clicou/*, true */);
+
+       function clicou(){
+        //Se quiser para a propagação
+        // event.stopImmediatePropagation();
+
+        //pega o event handler (quem disparou o evento)
+        const target = event.target;
+
+        //pega o tipo do evento
+        const type =  event.type;
+
+        //pega o handler atual (quem disparou no bubble/ quando esta subindo os niveis)
+        const currentTarget = event.currentTarget;
+
+        output.innerHTML += type + ": " + target.id + " - " + currentTarget.id + "<br>";
+       }
+    </script>
+</html>

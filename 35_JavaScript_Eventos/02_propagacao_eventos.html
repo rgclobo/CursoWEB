@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Eventos</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Eventos</h1>
+    <div id="output"></div>
+
+
+    <div class="container">
+        <h1>Propaação de eventos</h1>
+
+        <div id="d1" style="background: red; padding: 15px;">
+            texto dentro da div
+            <span style="background: yellow;"> Texto dentro da span</span>
+        </div>
+    </div>
+</body>
+
+    <script>
+        const output = document.querySelector("#output");
+
+        const $d1 = document.querySelector("#d1");
+        const $d1Span = document.querySelector("#d1 span");
+
+        $d1.addEventListener("click", function(){
+            console.log("Click no $d1");
+        })
+
+        $d1Span.addEventListener("click", function(){
+            console.log("Click no $d1Span");
+        })
+
+        document.addEventListener("click", function(){
+            console.log("Click no document");
+        })
+        
+    </script>
+</html>

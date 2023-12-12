@@ -25,10 +25,7 @@
         btn3.addEventListener("click", clicar);
         btn3.addEventListener("mousedown", clicar);
 
-        
-
-
-
+        let contador = 0;
         function clicar(event){
             //Pega o event handler (quem disparou o evento)
             const target = event.target;
@@ -36,7 +33,7 @@
             // Pega o tipo do evento (click)
             const type = event.type;
 
-            output.innerHTML += type + ": " + target.id + "<br>"
+            output.innerHTML += type + ": " + target.id + " - " + (++contador) + "<br>"
         };
 
 
