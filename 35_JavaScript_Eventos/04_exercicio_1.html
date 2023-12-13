@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Eventos</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Eventos - Exercicio 1</h1>
+
+    <form action="#">
+        <label for="txtUser">User: </label>
+        <input type="text" name="user" id="txtUser"><br>
+        <label for="txtPass">Pass: </label>
+        <input type="password" name="pass" id="txtPass"><br>
+        <button type="button" id="btn">Enviar</button>
+    </form>
+
+
+    <div id="output"></div>
+</body>
+
+    <script>
+        const output = document.querySelector("#output");
+
+
+        (function(){
+            'use strict'
+            const $txtUser = document.getElementById("txtUser");
+            const $txtPass = document.getElementById("txtPass");
+            const $btn = document.getElementById("btn");
+
+            $btn.addEventListener("click", function(event){
+
+                //validação
+                if(!$txtUser.value || !$txtPass.value){
+                     //desativa o comportamento padrão, no caso o envio do formulário do button
+                    event.preventDefault();
+
+                    alert("Preencha todos os campos!");
+                }
+
+                
+            });
+
+
+
+        })()
+        
+    </script>
+</html>

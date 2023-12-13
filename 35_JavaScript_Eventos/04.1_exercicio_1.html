@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Eventos</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Eventos - Exercicio 1</h1>
+
+    <form action="#" id="formLogin">
+        <label for="txtUser">User: </label>
+        <input type="text" name="user" id="txtUser"><br>
+        <label for="txtPass">Pass: </label>
+        <input type="password" name="pass" id="txtPass"><br>
+        <!-- Para fazer envio de formulário, é necessario que seja do type "submit" -->
+        <button type="submit" id="btn">Submit</button>
+    </form>
+
+
+    <div id="output"></div>
+</body>
+
+    <script>
+        const output = document.querySelector("#output");
+
+
+        (function(){
+            'use strict'
+            const $formLogin = document.getElementById("formLogin");
+            const $txtUser = document.getElementById("txtUser");
+            const $txtPass = document.getElementById("txtPass");
+            const $btn = document.getElementById("btn");
+
+            $formLogin.addEventListener("submit", function(event){
+
+                //validação
+                if(!$txtUser.value || !$txtPass.value){
+                    alert("Preencha todos os campos!");
+                    
+                    //desativa o comportamento padrão, no caso o envio do formulário do button
+                    event.preventDefault();
+                    
+                }
+
+                
+            });
+
+
+
+        })()
+        
+    </script>
+</html>
