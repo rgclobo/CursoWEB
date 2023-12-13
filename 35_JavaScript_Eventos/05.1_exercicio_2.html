@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Eventos</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Eventos - Exercicio 2</h1>
+
+    <textarea name="" id="msg" cols="50" rows="10" maxlength="250"></textarea>
+    Restam <span id="restam"></span> caracteres.
+
+    <div id="output"></div>
+</body>
+
+    <script>
+        const output = document.querySelector("#output");
+
+        (function(){
+            'use strict'
+            
+            const $txtMsg = document.getElementById("msg");
+            const $restam = document.getElementById("restam");
+            //pega o maxlength do textarea
+            const maxLength = parseInt($txtMsg.getAttribute('maxlength'));
+
+            $restam.textContent = maxLength;
+
+            $txtMsg.addEventListener("input", checkLength);
+
+
+            function checkLength(event){
+            const numeroLetrasDigitados = this.value.length;
+            $restam.textContent = maxLength - numeroLetrasDigitados;
+        }
+
+        })()
+        
+    </script>
+</html>
