@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javacript - Eventos - Delegação de Eventos</title>
+</head>
+<body>
+    <h1>Curso JavaScript - Eventos - Delegação de Eventos</h1>
+
+    <div class="container">
+        <ul id="menu">
+            <li>Lista 1</li>
+            <li>Lista 2</li>
+            <li>Lista 3</li>
+        </ul>
+    </div>
+
+    <div id="output"></div>
+
+
+</body>
+
+    <script>
+        const output = document.querySelector("#output");
+
+        // Podemos capturar o evento do elemento acima
+        const $ul = document.querySelector("#menu");
+        
+        $ul.addEventListener("click", function(event){
+            output.innerHTML += "Clicou em " + event.target.nodeName + " -  " + event.currentTarget.nodeName + " -> " + event.target.textContent + "<br>";
+        
+            //Para garantir que clicou na LI
+            if(event.target.nodeName === "LI"){
+                //chama o que precisar
+                alert("Clicou na LI");
+            }
+        
+        });
+
+
+        // ou fazer um loop para adicionar a cada element
+        const $lis = document.querySelectorAll("#menu li");
+
+        
+            for(let i = 0; i < $lis.length, i++;){
+
+                $lis[i].addEventListener("click", function(event){
+                   output.innerHTML += "Clicou em " + event.target.nodeName + " - " + event.currentTarget.nodeName + " -> " + event.target.textContent + "<br>";
+                
+                    //Para garantir que clicou na LI
+                    if(event.target.nodeName === "LI"){
+                    //chama o que precisar
+                    alert("Clicou na LI");
+            }
+                
+                
+                })
+            };
+        
+        
+    </script>
+</html>
